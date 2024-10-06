@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background GIF -->
+        <div class="background-gif">
+            <img id="background" alt="Background GIF">
+        </div>
+        
+        <!-- Content section -->
+        <div class="content">
+
+            <!-- Image and Name Section -->
+            <div class="left">
+                <img id="location-image" alt="Place Image">
+                <div class="location-name">
+                    <h2 id="location-name-en"></h2>
+                    <h3 id="location-name-jp"></h3>
+                </div>
+            </div>
+
+            <!-- Description Section -->
+            <div class="right">
+                <p id="description-en"></p>
+                <p id="description-jp"></p>
+            </div>
+
+            <div class="left-arrow" onclick="previousItem()">
+                &lt; <!-- This is "<" -->
+            </div>
+            
+            <div class="right-arrow" onclick="nextItem()">
+                &gt; <!-- This is ">" -->
+            </div>
+
+            <!-- Return Button to Main Page -->
+            <div class="return-button">
+                <button onclick="goToMainPage()">Return to Main Page</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
