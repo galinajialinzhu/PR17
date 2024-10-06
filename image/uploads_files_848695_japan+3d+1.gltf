@@ -1,0 +1,172 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.4.0)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_specular",
+        "KHR_materials_volume",
+        "KHR_materials_ior",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 51715,
+            "type": "VEC3",
+            "max": [
+                1.8068299293518066,
+                4.0,
+                0.04571659862995148
+            ],
+            "min": [
+                -1.8068199157714844,
+                4.4807901389276594e-8,
+                -0.04571659862995148
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 51715,
+            "type": "VEC3",
+            "max": [
+                0.9999997019767761,
+                0.9999998807907104,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 51715,
+            "type": "VEC2",
+            "max": [
+                2.053950071334839,
+                3.0211400985717773
+            ],
+            "min": [
+                -2.053950071334839,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 73239,
+            "type": "SCALAR",
+            "max": [
+                51714
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1947836,
+            "uri": "uploads_files_848695_japan+3d+1.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 620580,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 620580,
+            "byteLength": 620580,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1241160,
+            "byteLength": 413720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1654880,
+            "byteLength": 292956,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "Global(2):0:0:0",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_specular": {
+                    "specularFactor": 1.0,
+                    "specularColorFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "KHR_materials_ior": {
+                    "ior": 1.0
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Global(1):0:0:0.0:63:255:0.Global(1):0:0:0.Global(2):0:0:0.defaultobject",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "uploads_files_848695_japan+3d+1.obj",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "defaultobject",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

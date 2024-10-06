@@ -1,113 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Main Page with Three.js</title>
+    <link rel="stylesheet" href="threestyles.css">
 </head>
 <body>
-    
-
     <div id="logo-container">
         <img src="image/school-logo.png" alt="Logo" id="logo">
     </div>
 
-    <!-- The rest of your content goes here -->
-    <div class="bottom-bar">
-        <!-- Buttons here -->
-    </div>
-    
-
-    <!-- Map Section -->
-    <div id="map" class="section">
-        <div class="map-container">
-            <img src="image/map_jpn.png" alt="Map" class="map-image">
-            <!-- Map dots and functionality here -->
-            <div class="dot" style="top: 40%; left: 60%;" onclick="showDetail(0)">
-                <span class="tooltip">Big Cat Bang @ Ginza Six</span>
-            </div>
-            <div class="dot" style="top: 50%; left: 30%;" onclick="showDetail(1)">
-                <span class="tooltip">Pi Photonics</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 80%;" onclick="showDetail(2)">
-                <span class="tooltip">Suzusan Shibori Light</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 60%;" onclick="showDetail(3)">
-                <span class="tooltip">Minna no Mori Gifu Media Cosmos</span>
-            </div>
-            <div class="dot" style="top: 40%; left: 60%;" onclick="showDetail(4)">
-                <span class="tooltip">Mino Town</span>
-            </div>
-            <div class="dot" style="top: 50%; left: 30%;" onclick="showDetail(5)">
-                <span class="tooltip">Mino Washi Paper Making</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 80%;" onclick="showDetail(6)">
-                <span class="tooltip">X's Factory</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 60%;" onclick="showDetail(7)">
-                <span class="tooltip">Yamada-san Porcelain</span>
-            </div>
-            <div class="dot" style="top: 40%; left: 60%;" onclick="showDetail(8)">
-                <span class="tooltip">Yusai-tei Textile Studio</span>
-            </div>
-            <div class="dot" style="top: 50%; left: 30%;" onclick="showDetail(9)">
-                <span class="tooltip">Monk Ittoku-san: Zen & Healing Light</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 80%;" onclick="showDetail(10)">
-                <span class="tooltip">Kojima Shoten</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 60%;" onclick="showDetail(11)">
-                <span class="tooltip">POJ Studio</span>
-            </div>
-            <div class="dot" style="top: 40%; left: 60%;" onclick="showDetail(12)">
-                <span class="tooltip">Zen Night Walk Kyoto</span>
-            </div>
-            <div class="dot" style="top: 50%; left: 30%;" onclick="showDetail(13)">
-                <span class="tooltip">Eriko Horiki Showroom</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 80%;" onclick="showDetail(14)">
-                <span class="tooltip">Hosoo Textile Gallery/Showroom</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 60%;" onclick="showDetail(15)">
-                <span class="tooltip">Hiroshi Sugimoto Gallery</span>
-            </div>
-            <div class="dot" style="top: 40%; left: 60%;" onclick="showDetail(16)">
-                <span class="tooltip">Valley Gallery</span>
-            </div>
-            <div class="dot" style="top: 50%; left: 30%;" onclick="showDetail(17)">
-                <span class="tooltip">Chichu Art Museum</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 80%;" onclick="showDetail(18)">
-                <span class="tooltip">Teshima Art Museum</span>
-            </div>
-            <div class="dot" style="top: 70%; left: 60%;" onclick="showDetail(19)">
-                <span class="tooltip">Art Houses</span>
-            </div>
-            <div class="dot" style="top: 40%; left: 60%;" onclick="showDetail(20)">
-                <span class="tooltip">Benesse House Museum</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <div id="hero" class="section hidden">
-    </div>
-
-    <!-- Projects Section -->
-    <div id="projects" class="section hidden">
-    </div>
-
-    <!-- Students Section -->
-    <div id="students" class="section hidden">
-    </div>
-
-    <!-- Faculty Section -->
-    <div id="faculty" class="section hidden">
-    </div>
-
-
+    <!-- Bottom bar -->
     <div class="bottom-bar">
         <button onclick="showSection('hero')">Overview</button>
         <button onclick="showSection('map')" class="active">Field Trip</button>
@@ -116,14 +20,27 @@
         <button onclick="showSection('faculty')">Faculty</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Map Section with Three.js Canvas -->
+    <div id="map" class="section">
+        <div id="threejs-container"></div> <!-- Three.js will render here -->
+        <div class="map-container">
+            
+            <!-- Dots for the interactive map -->
+            <div class="dot" style="top: 40%; left: 60%;" onclick="showDetail(0)">
+                <span class="tooltip">Big Cat Bang @ Ginza Six</span>
+            </div>
+            <!-- Add other dots similarly -->
+        </div>
+    </div>
 
-    <script>
+    <!-- Other sections... -->
+    <div id="hero" class="section hidden"></div>
+    <div id="projects" class="section hidden"></div>
+    <div id="students" class="section hidden"></div>
+    <div id="faculty" class="section hidden"></div>
 
-        function showDetail(index) {
-            window.location.href = `detail-page.html?index=${index}`;
-        }
-    </script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
