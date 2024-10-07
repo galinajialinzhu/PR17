@@ -1,4 +1,4 @@
-let scene, camera, renderer, cube;
+let scene, camera, renderer, gltf;
 let isThreeJsInitialized = false; // Track if the Three.js scene is initialized
 
 function showSection(section) {
@@ -31,32 +31,34 @@ function initThreeJs() {
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild( renderer.domElement );
-    const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
-    scene.add( directionalLight );
+    document.getElementById('threejs-container').appendChild(renderer.domElement);
 
-    const loader = new GLTFLoader();
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    scene.add(directionalLight);
 
-    loader.load( 'image/japan.glb', function ( gltf ) {
-
-        scene.add( gltf.scene );
-        animate();
-
-    }, undefined, function ( error ) {
-
-        console.error( error );
-
-    } );
-
+    const loader = new THREE.GLTFLoader();
+    loader.load('image/japan.glb', function (loadedGltf) {
+        gltf = loadedGltf.scene; // Assign the loaded GLTF model to the global variable
+        scene.add(gltf);
+        camera.position.z = 5; // Set the camera position to view the model
+        isThreeJsInitialized = true; // Set flag to true after initialization
+        animate(); // Start animation loop
+    },
+    function (xhr) {
+        console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+    },
+    function (error) {
+        console.error('Error loading the model:', error);
+    });
 }
 
 // Function to animate the 3D object
 function animate() {
-    if (!isThreeJsInitialized) return; // Exit if Three.js is not initialized
+    if (!isThreeJsInitialized || !gltf) return; // Exit if Three.js is not initialized or model isn't loaded yet
 
     requestAnimationFrame(animate);
     gltf.rotation.x += 0.01;
-    gltf.rotation.y += 0.01;
+    gltf.rotation.z += 0.01;
     renderer.render(scene, camera);
 }
 
@@ -72,8 +74,8 @@ function disposeThreeJs() {
     scene = null;
     camera = null;
     renderer = null;
-    cube = null;
-    isThreeJsInitialized = false;
+    gltf = null;
+    isThreeJsInitialized = false; // Reset the initialization flag
 }
 
 // Function to show the detail page when a map dot is clicked
