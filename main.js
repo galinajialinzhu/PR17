@@ -1,4 +1,3 @@
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 let scene, camera, renderer, cube;
 let isThreeJsInitialized = false; // Track if the Three.js scene is initialized
 
@@ -75,15 +74,3 @@ function disposeThreeJs() {
 function showDetail(index) {
     window.location.href = `detail-page.html?index=${index}`;
 }
-
-const loader = new GLTFLoader();
-
-loader.load( 'image/uploads_files_848695_japan+3d+1.gltf', function ( gltf ) {
-
-	scene.add( gltf.scene );
-
-}, undefined, function ( error ) {
-
-	console.error( error );
-
-} );
