@@ -1,4 +1,3 @@
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 let scene, camera, renderer, cube;
 let isThreeJsInitialized = false; // Track if the Three.js scene is initialized
 
@@ -32,17 +31,23 @@ function initThreeJs() {
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.getElementById('threejs-container').appendChild(renderer.domElement);
+    document.body.appendChild( renderer.domElement );
+    const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+    scene.add( directionalLight );
 
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+    const loader = new GLTFLoader();
 
-    camera.position.z = 5;
-    isThreeJsInitialized = true;
+    loader.load( 'image/japan.glb', function ( gltf ) {
 
-    animate(); // Start the animation loop
+        scene.add( gltf.scene );
+        animate();
+
+    }, undefined, function ( error ) {
+
+        console.error( error );
+
+    } );
+
 }
 
 // Function to animate the 3D object
@@ -50,8 +55,8 @@ function animate() {
     if (!isThreeJsInitialized) return; // Exit if Three.js is not initialized
 
     requestAnimationFrame(animate);
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    gltf.rotation.x += 0.01;
+    gltf.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
 
@@ -75,15 +80,3 @@ function disposeThreeJs() {
 function showDetail(index) {
     window.location.href = `detail-page.html?index=${index}`;
 }
-
-const loader = new GLTFLoader();
-
-loader.load( 'image/uploads_files_848695_japan+3d+1.gltf', function ( gltf ) {
-
-	scene.add( gltf.scene );
-
-}, undefined, function ( error ) {
-
-	console.error( error );
-
-} );
