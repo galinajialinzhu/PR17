@@ -190,7 +190,6 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-
 // Update the page content based on the currentIndex
 function updateContent() {
     const location = locations[currentIndex];
@@ -203,8 +202,7 @@ function updateContent() {
     document.getElementById('description-jp').textContent = location.descriptionJp;
 }
 
-// Initialize the page based on the 'index' from the URLwindow.onload = init;
-
+// Initialize the page based on the 'index' from the URL
 function init() {
     const index = getQueryParam('index');
     if (index !== null && locations[index]) {
@@ -214,7 +212,6 @@ function init() {
         console.error('Invalid index or no index provided');
     }
 }
-
 
 // Navigation to the previous item
 function previousItem() {
@@ -229,6 +226,7 @@ function nextItem() {
 }
 
 // Initialize the page when it loads
+window.onload = init;
 
 // Function to return to the main page
 function goToMainPage() {
@@ -244,32 +242,28 @@ function showSection(section) {
     document.querySelectorAll('.section').forEach(sec => {
         sec.classList.add('hidden');
     });
-
-    // Get the selected section element
-    const sectionElement = document.getElementById(section);
-
-    // Check if the section element exists before modifying it
-    if (sectionElement) {
-        // Show the selected section
-        sectionElement.classList.remove('hidden');
-
-        // Change the background based on the section
-        const backgroundImage = sectionBackgrounds[section];
-        document.getElementById('background').style.backgroundImage = `url(${backgroundImage})`;
-
-        // Remove 'active' class from all buttons
-        document.querySelectorAll('.bottom-bar button').forEach(button => {
-            button.classList.remove('active');
-        });
-
-        // Add 'active' class to the clicked button
-        document.querySelector(`.bottom-bar button[onclick="showSection('${section}')"]`).classList.add('active');
-    } else {
-        console.error(`Section with id "${section}" not found.`);
-    }
+    
+    // Show the selected section
+    document.getElementById(section).classList.remove('hidden');
 }
 
+function showSection(section) {
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(sec => {
+        sec.classList.add('hidden');
+    });
 
+    // Show the selected section
+    document.getElementById(section).classList.remove('hidden');
+
+    // Remove 'active' class from all buttons
+    document.querySelectorAll('.bottom-bar button').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked button
+    document.querySelector(`.bottom-bar button[onclick="showSection('${section}')"]`).classList.add('active');
+}
 
 // Function to open a YouTube video in a new window
 function openYoutubeVideo(videoUrl) {
@@ -305,43 +299,6 @@ sidebarItems.forEach(item => {
     });
 });
 
-// Background images for different sections
-const sectionBackgrounds = {
-    'hero': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg',    // Background for Overview
-    'map': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg',    // Background for Field Trip
-    'projects': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg', // Background for Projects
-    'students': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg', // Background for Students
-    'faculty': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg'   // Background for Faculty
-};
-
-// Function to switch sections and change the background
-function showSection(section) {
-    // Hide all sections
-    document.querySelectorAll('.section').forEach(sec => {
-        sec.classList.add('hidden');
-    });
-
-    // Show the selected section
-    document.getElementById(section).classList.remove('hidden');
-
-    // Change the background based on the section
-    const backgroundImage = sectionBackgrounds[section];
-    document.getElementById('background').style.backgroundImage = `url(${backgroundImage})`;
-
-    // Remove 'active' class from all buttons
-    document.querySelectorAll('.bottom-bar button').forEach(button => {
-        button.classList.remove('active');
-    });
-
-    // Add 'active' class to the clicked button
-    document.querySelector(`.bottom-bar button[onclick="showSection('${section}')"]`).classList.add('active');
-}
-
-// Call this function on page load to set the default section
-window.onload = function() {
-    showSection('map'); // Set the initial section to "Field Trip" or any default section
-};
-
 function showDetail(index) {
     if (locations[index]) {
         window.location.href = `detail-page.html?index=${index}`;
@@ -349,5 +306,3 @@ function showDetail(index) {
         console.error('Invalid location index:', index);
     }
 }
-
-
