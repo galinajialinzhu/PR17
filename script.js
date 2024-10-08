@@ -171,39 +171,6 @@ const locations = [
     // {
     //     gif: '',
     //     image: '',
-    //     nameEn: 'Noguchi Garden Museum',
-    //     nameJp: 'イサム・ノグチ庭園美術館',
-    //     descriptionEn: "The Isamu Noguchi Garden Museum, located in Mure-cho, Kagawa Prefecture, Japan, is a tribute to the renowned sculptor Isamu Noguchi (1904–1988). Established in his former studio, the museum showcases a collection of approximately 150 sculptures, many unfinished, preserving the creative atmosphere of Noguchi's workspace. Opened to inspire artists and scholars, the museum blends art with nature, featuring both indoor and outdoor installations set against the backdrop of historic Yashima and Mount Gokenzan. Visits are by appointment only, allowing guests to experience Noguchi’s artistic legacy in a serene environment​",
-    //     descriptionJp: 'イサム・ノグチ庭園美術館は、香川県牟礼町に位置し、著名な彫刻家イサム・ノグチ（1904–1988）を讃える美術館です。彼の元スタジオに設立されたこの美術館には、約150点の彫刻が展示されており、その多くは未完成のまま保存されており、ノグチの創造的な作業空間の雰囲気を保っています。芸術家や学者にインスピレーションを与えるためにオープンしたこの美術館は、自然とアートが調和する空間で、屋内外のインスタレーションを含みます。訪問は予約制で、ノグチの芸術的遺産を穏やかな環境で体験できます'
-    // },
-    
-    // {
-    //     gif: '',
-    //     image: '',
-    //     nameEn: '',
-    //     nameJp: '',
-    //     descriptionEn: '',
-    //     descriptionJp: ''
-    // },
-    // {
-    //     gif: '',
-    //     image: '',
-    //     nameEn: '',
-    //     nameJp: '',
-    //     descriptionEn: '',
-    //     descriptionJp: ''
-    // },
-    // {
-    //     gif: '',
-    //     image: '',
-    //     nameEn: '',
-    //     nameJp: '',
-    //     descriptionEn: '',
-    //     descriptionJp: ''
-    // },
-    // {
-    //     gif: '',
-    //     image: '',
     //     nameEn: '',
     //     nameJp: '',
     //     descriptionEn: '',
@@ -223,6 +190,7 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
+
 // Update the page content based on the currentIndex
 function updateContent() {
     const location = locations[currentIndex];
@@ -235,7 +203,8 @@ function updateContent() {
     document.getElementById('description-jp').textContent = location.descriptionJp;
 }
 
-// Initialize the page based on the 'index' from the URL
+// Initialize the page based on the 'index' from the URLwindow.onload = init;
+
 function init() {
     const index = getQueryParam('index');
     if (index !== null && locations[index]) {
@@ -245,6 +214,7 @@ function init() {
         console.error('Invalid index or no index provided');
     }
 }
+
 
 // Navigation to the previous item
 function previousItem() {
@@ -259,11 +229,11 @@ function nextItem() {
 }
 
 // Initialize the page when it loads
-window.onload = init;
 
 // Function to return to the main page
 function goToMainPage() {
     window.location.href = 'index.html';  // Change this if your main page URL is different
+    
 }
 
 // Other functions (updateContent, previousItem, nextItem) remain unchanged
@@ -274,11 +244,77 @@ function showSection(section) {
     document.querySelectorAll('.section').forEach(sec => {
         sec.classList.add('hidden');
     });
-    
-    // Show the selected section
-    document.getElementById(section).classList.remove('hidden');
+
+    // Get the selected section element
+    const sectionElement = document.getElementById(section);
+
+    // Check if the section element exists before modifying it
+    if (sectionElement) {
+        // Show the selected section
+        sectionElement.classList.remove('hidden');
+
+        // Change the background based on the section
+        const backgroundImage = sectionBackgrounds[section];
+        document.getElementById('background').style.backgroundImage = `url(${backgroundImage})`;
+
+        // Remove 'active' class from all buttons
+        document.querySelectorAll('.bottom-bar button').forEach(button => {
+            button.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked button
+        document.querySelector(`.bottom-bar button[onclick="showSection('${section}')"]`).classList.add('active');
+    } else {
+        console.error(`Section with id "${section}" not found.`);
+    }
 }
 
+
+
+// Function to open a YouTube video in a new window
+function openYoutubeVideo(videoUrl) {
+    window.open(videoUrl, '_blank', 'width=800,height=600');
+}
+
+
+// Get all sidebar items
+const sidebarItems = document.querySelectorAll('.sidebar a[data-dot]');
+
+// Loop through each sidebar item
+sidebarItems.forEach(item => {
+    item.addEventListener('mouseover', function() {
+        // Get the corresponding dot ID from the data attribute
+        const dotId = this.getAttribute('data-dot');
+        const dot = document.getElementById(dotId);
+
+        // Add a hover effect to the dot
+        if (dot) {
+            dot.style.backgroundColor = 'red'; // Change the color to red on hover
+        }
+    });
+
+    item.addEventListener('mouseout', function() {
+        // Get the corresponding dot ID
+        const dotId = this.getAttribute('data-dot');
+        const dot = document.getElementById(dotId);
+
+        // Remove the hover effect
+        if (dot) {
+            dot.style.backgroundColor = 'black'; // Reset the color when not hovered
+        }
+    });
+});
+
+// Background images for different sections
+const sectionBackgrounds = {
+    'hero': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg',    // Background for Overview
+    'map': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg',    // Background for Field Trip
+    'projects': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg', // Background for Projects
+    'students': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg', // Background for Students
+    'faculty': 'image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg'   // Background for Faculty
+};
+
+// Function to switch sections and change the background
 function showSection(section) {
     // Hide all sections
     document.querySelectorAll('.section').forEach(sec => {
@@ -287,6 +323,10 @@ function showSection(section) {
 
     // Show the selected section
     document.getElementById(section).classList.remove('hidden');
+
+    // Change the background based on the section
+    const backgroundImage = sectionBackgrounds[section];
+    document.getElementById('background').style.backgroundImage = `url(${backgroundImage})`;
 
     // Remove 'active' class from all buttons
     document.querySelectorAll('.bottom-bar button').forEach(button => {
@@ -297,6 +337,17 @@ function showSection(section) {
     document.querySelector(`.bottom-bar button[onclick="showSection('${section}')"]`).classList.add('active');
 }
 
+// Call this function on page load to set the default section
+window.onload = function() {
+    showSection('map'); // Set the initial section to "Field Trip" or any default section
+};
 
+function showDetail(index) {
+    if (locations[index]) {
+        window.location.href = `detail-page.html?index=${index}`;
+    } else {
+        console.error('Invalid location index:', index);
+    }
+}
 
 

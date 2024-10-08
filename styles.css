@@ -75,6 +75,16 @@ body, html {
     width: 50px; /* Make underline longer on hover */
 }
 
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* This ensures the video covers the entire screen while maintaining its aspect ratio */
+    z-index: -1; /* This places the video behind all other content */
+}
+
 
 .map-container {
     position: fixed;  /* Keeps the container in the viewport */
@@ -86,25 +96,25 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('image/FieldTrip/Kyoto/ErikoHorikiShowroom/My Movie 11.gif');
     background-size: cover; /* Ensures the GIF covers the entire container */
     background-position: center;
 }
 
 .map-image {
-    width: 100%; /* Make the image responsive */
+    width: 80%; /* Make the image responsive */
     height: auto;
 }
 
 
 .dot {
-    position: absolute;
-    width: 20px;
-    height: 20px;
+   position: absolute;
+    width: 10px;
+    height: 10px;
     background-color: black;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transition for both scale and color */
+
 }
 
 .dot:hover {
@@ -217,24 +227,98 @@ p {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.return-button button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.return-button img {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* Ensures the image covers the whole circle */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.return-button button:hover {
-    background-color: #0056b3;
+.return-button img:hover {
+    transform: scale(1.1); /* Add a hover effect to enlarge the image slightly */
 }
+
+.return-button p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.return-button img, .return-button p {
+    cursor: pointer; /* Make the text and image clickable */
+}
+
 
 /* Hide sections by default */
 .hidden {
     display: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    width: 350px;
+    height: 70vh; /* Full viewport height */
+    background-color: transparent; /* Fully transparent background */
+    padding: 20px;
+    color: white;
+    overflow-y: auto; /* Keeps the content scrollable internally if needed */
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in WebKit browsers like Chrome, Safari */
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Background Container */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure it's behind all content */
+    transition: background-image 0.5s ease-in-out; /* Add smooth transition for background image */
+}
+
+
+/* Ensure sections are hidden except the active one */
+.hidden {
+    display: none;
+}
+
+.background-container {
+    background-image: url('image/886A4A39-9DC9-489A-9B3D-D770D9200BB9_1_105_c 2.jpg'); /* Use a known path for testing */
 }
