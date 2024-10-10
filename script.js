@@ -1,7 +1,7 @@
 // Data for different locations
 const locations = [
     {
-        gif: '',
+        gif: 'image/FieldTrip/Tokyo/BigCatBang/BigCatBang.mp4',
         image: 'image/map_jpn.png',
         nameEn: 'Big Cat Bang @ Ginza Six',
         nameJp: 'ビッグキャットバン @ ギンザシックス',
@@ -317,107 +317,3 @@ function showDetail(index) {
     }
 }
 
-
-
-// Data for hover images and dot positions
-const hoverData = {
-    circle1: {
-        image: 'path/to/image1.jpg',
-        dots: [
-            { id: 'dot-1', top: '40%', left: '60%' }
-            // Add more dots as needed
-        ]
-    },
-    circle2: {
-        image: 'path/to/image2.jpg',
-        dots: [
-            { id: 'dot-2', top: '50%', left: '30%' },
-            { id: 'dot-3', top: '70%', left: '80%' }
-            // Add more dots as needed
-        ]
-    },
-    circle3: {
-        image: 'path/to/image2.jpg',
-        dots: [
-            { id: 'dot-2', top: '50%', left: '30%' },
-            { id: 'dot-3', top: '70%', left: '80%' }
-            // Add more dots as needed
-        ]
-    },
-    circle4: {
-        image: 'path/to/image2.jpg',
-        dots: [
-            { id: 'dot-2', top: '50%', left: '30%' },
-            { id: 'dot-3', top: '70%', left: '80%' }
-            // Add more dots as needed
-        ]
-    }
-    // Add other circles and their corresponding data
-};
-
-// Function to show the hover image and dots
-function showHoverImage(circleId) {
-    const hoverImageContainer = document.getElementById('hoverImageContainer');
-    const hoverImage = document.getElementById('hoverImage');
-    const hoverDotsContainer = document.getElementById('hoverDotsContainer');
-
-    // Get the data for the circle
-    const data = hoverData[circleId];
-
-    if (data) {
-        // Set the hover image source
-        hoverImage.src = data.image;
-
-        // Clear previous dots
-        hoverDotsContainer.innerHTML = '';
-
-        // Add new dots for this hover image
-        data.dots.forEach(dot => {
-            const dotElement = document.createElement('div');
-            dotElement.classList.add('hover-dot');
-            dotElement.style.top = dot.top;
-            dotElement.style.left = dot.left;
-            dotElement.setAttribute('onclick', `showDetail(${dot.id.split('-')[1]})`);
-
-            hoverDotsContainer.appendChild(dotElement);
-        });
-
-        // Show the hover image container
-        hoverImageContainer.style.display = 'block';
-    }
-}
-
-// Function to hide the hover image and dots
-function hideHoverImage() {
-    const hoverImageContainer = document.getElementById('hoverImageContainer');
-    hoverImageContainer.style.display = 'none';
-}
-
-// Event listeners for the circles
-document.querySelectorAll('.circle').forEach(circle => {
-    circle.addEventListener('mouseover', () => showHoverImage(circle.id));
-    circle.addEventListener('mouseout', hideHoverImage);
-});
-
-// Show hover image when clicking the sidebar
-function showHoverImageFromSidebar(index) {
-    // Find the corresponding circle id
-    let circleId;
-    for (let key in hoverData) {
-        if (hoverData[key].dots.some(dot => dot.id === `dot-${index + 1}`)) {
-            circleId = key;
-            break;
-        }
-    }
-
-    if (circleId) {
-        showHoverImage(circleId);
-    }
-}
-
-// Event listener for sidebar items
-document.querySelectorAll('.sidebar a').forEach((link, index) => {
-    link.addEventListener('click', () => {
-        showHoverImageFromSidebar(index);
-    });
-});
