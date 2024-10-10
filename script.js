@@ -9,7 +9,7 @@ const locations = [
         descriptionJp: 'ビッグキャットバン @ ギンザシックス は、ヤノベケンジによる東京・ギンザシックスでの7周年記念のアートインスタレーションです。2024年4月5日に公開されるこの作品は、岡本太郎の太陽の塔に似た宇宙船に宇宙飛行士の猫が乗っている様子が描かれています。この作品は、船員を守る海猫にインスピレーションを得たヤノベの「船猫」シリーズの一部です。インスタレーションには太陽の塔のスケールモデルが含まれており、幸運と探検のメッセージを伝えることを目的としています。'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Nagoya/PiPhotonics/Piphotonics.mp4',
         image: '',
         nameEn: 'Pi Photonics',
         nameJp: '株式会社パイフォトニクス',
@@ -17,7 +17,7 @@ const locations = [
         descriptionJp: 'パイフォトニクス は、浜松、日本に拠点を置くダイナミックなスタートアップで、2006年に池田隆宏によって設立されました。彼は元MITの光学研究者です。この会社は、高度な光学技術の設計と製造を専門としており、特にフラッグシップ製品であるHOLOLIGHT（ホロライト）が注目されています。この革新的な照明ソリューションは、高出力のLEDと独自の光学要素を組み合わせて、高い視認性を持つ光パターンを生成します。このため、特に工業環境での安全アプリケーションに役立っています'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Nagoya/SuzusanShibori/SuzusanShibori.mp4',
         image: '',
         nameEn: 'Suzusan Shibori Light',
         nameJp: '株式会社スズサン',
@@ -25,7 +25,7 @@ const locations = [
         descriptionJp: 'スズサンは、有松で100年以上にわたり受け継がれてきた伝統的な絞り染め技術に根ざしたデザインブランドです。スズサンのシボリライトは、日本の伝統工芸と現代の美学を融合させたユニークな3次元照明デザインを提供します。創設者の村瀬弘行は、古代の技術を現代的なデザインに取り入れ、照明にエレガントで職人技の光をもたらしています​'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Nagoya/MinnaNoMori/MinnaNoMori.mp4',
         image: '',
         nameEn: 'Minna no Mori Gifu Media Cosmos',
         nameJp: 'みんなの森 ぎふメディアコスモス',
@@ -33,7 +33,7 @@ const locations = [
         descriptionJp: 'みんなの森ぎふメディアコスモスは、日本の岐阜市にある複合施設です。岐阜市中央図書館を「知識のハブ」としてはじめ、市民活動交流センターや多文化交流プラザを備えています。この施設は、知識や文化、地域のつながりを育むことを目的としており、さまざまな活動のための展示ギャラリーもあります。建築家の伊東豊雄によってデザインされ、学びと協働のための魅力的な空間を提供しています'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Nagoya/MinoTown/MinoTown.mp4',
         image: '',
         nameEn: 'Mino Town',
         nameJp: '美濃市',
@@ -41,7 +41,7 @@ const locations = [
         descriptionJp: '美濃市は、1300年以上にわたって作られてきた伝統的な和紙である美濃和紙の生産地として知られています。また、町は和紙と竹から作られた提灯でも有名です。これらの提灯は日本の豊かな歴史を持ち、その美しさと職人技が称賛されています。訪問者は、地元の祭りや美濃和紙あかりアート展などで提灯の制作体験をし、和紙の可能性を展示するアートを楽しむことができます'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Nagoya/MinoWashiPaking/MinoWashiMaking.mp4',
         image: '',
         nameEn: 'Mino Washi Paper Making',
         nameJp: '美濃和紙作り',
@@ -49,7 +49,7 @@ const locations = [
         descriptionJp: '美濃和紙の里会館は、岐阜県美濃市にある伝統的な日本の和紙である美濃和紙の技術を紹介する文化施設です。訪問者は、和紙製作技術を学ぶ体験活動に参加できます。近くのわらび製紙会社では、高品質な和紙の生産についての洞察を提供しています。これらの施設を通じて、美濃の和紙作りの遺産を深く体験できます'
     },
     {
-        gif: '',
+        gif: "image/FieldTrip/Nagoya/X'sFactory/x's.mp4",
         image: '',
         nameEn: "X's Factory",
         nameJp: "X's工場見学",
@@ -57,7 +57,7 @@ const locations = [
         descriptionJp: "X's工場見学は、陶器の中心地である多治見市で、タイル製作の芸術を探求するユニークな機会を提供します。多治見は、美濃焼きに焦点を当てた陶器と陶芸の豊かな伝統で知られています。見学中、訪問者はカスタムタイルの制作過程を目の前で観察し、製造から釉薬、焼成方法までの詳細を学ぶことができます。この工場は、X'S株式会社の一部であり、タイル生産において材料のリサイクルを重視した持続可能性も強調しています"
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Nagoya/YamadaSan/Yamada.mp4',
         image: '',
         nameEn: 'Yamada-san Porcelain',
         nameJp: '山田さんの瀬戸磁器',
@@ -65,7 +65,7 @@ const locations = [
         descriptionJp: '山田さんの瀬戸磁器は、愛知県の瀬戸市にある有名な陶器工房で、美しい瀬戸焼で知られています。この種類の磁器は千年以上の歴史を持ち、瀬戸は日本の六古窯の一つとして認識されています。山田さんの工場を訪れると、質の高い釉薬や焼成方法を含む伝統的な磁器製造技術を探求することができます。地元の素材を使用し、瀬戸焼が称賛される独特の芸術性と職人技を展示しています'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Kyoto/Yusai-tei/Yusaitei.mp4',
         image: '',
         nameEn: 'Yusai-tei Textile Studio',
         nameJp: '祐斎亭染色スタジオ',
@@ -73,7 +73,7 @@ const locations = [
         descriptionJp: '祐斎亭は、京都の嵐山に位置する染色スタジオで、夢こうろ染という伝統的な日本の染色技法を専門としています。この歴史的なスタジオは、150年以上の歴史を持つ明治時代の建物にあり、訪問者は染色体験を楽しみ、美しく仕立てられたテキスタイルを生み出すための複雑な方法について学ぶことができます。スタジオは、嵐山の自然の美しさを強調し、アート体験をより豊かなものにしています'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Kyoto/Ittoku-sanTemple/Ittoku.mp4',
         image: '',
         nameEn: 'Monk Ittoku-san: Zen & Healing Light',
         nameJp: '一徳さん: 禅と癒しの光',
@@ -89,7 +89,7 @@ const locations = [
         descriptionJp: '小嶋商店は、京都にある有名な提灯工房で、伝統的な京提灯を専門に制作しています。訪問者は、提灯作りの手作りワークショップに参加することができ、古代のじばり式技法を学ぶことができます。この体験では、工房の見学を通じて、竹を割る作業から和紙を貼り付ける工程まで、提灯作りの細かなプロセスを紹介します。この没入型の活動は、参加者に職人技を感謝する機会を提供するだけでなく、提灯の日本の歴史における文化的重要性を理解することを可能にします'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Kyoto/POJStudio/POJ.mp4',
         image: '',
         nameEn: 'POJ Studio',
         nameJp: 'POJスタジオ',
@@ -97,7 +97,7 @@ const locations = [
         descriptionJp: 'POJスタジオは、京都に拠点を置くプラットフォームで、日本の職人と世界をつなぐことに専念しています。ティナ・コヤマとハナ・ツカモトによって設立され、スタジオは伝統工芸を守りながら現代のライフスタイル製品を提供することに焦点を当てています。提供されるワークショップでは、参加者が金を使って陶器を修復する技術である金継ぎを学び、手作りのアイテムが日本の職人技の本質を体現しています。POJスタジオは、持続可能な生活へのアプローチを促進し、日本の職人の豊かな遺産を祝うことを目指しています'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Kyoto/ZenNight/Zen.mp4',
         image: '',
         nameEn: 'Zen Night Walk Kyoto',
         nameJp: '禅ナイトウォーク京都',
@@ -105,7 +105,7 @@ const locations = [
         descriptionJp: '禅ナイトウォークは、京都最古の禅寺である建仁寺で開催されるユニークなイベントで、2024年9月22日まで毎日午後7時から9時30分まで行われます。この没入型体験は、周囲の音風景とアートの光のインスタレーションを組み合わせ、マインドフルネスに適した穏やかな雰囲気を生み出します。訪問者は、リラクゼーションと集中力を高めるために科学的にデザインされた「ニューロミュージック」を聴きながら、寺院の敷地を散策します。見どころには、双龍のプロジェクションや、著名な枯山水庭園「大韵」での雲海があり、魅力的な感覚体験を提供します​'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Kyoto/ErikoHorikiShowroom/eriko.mp4',
         image: '',
         nameEn: 'Eriko Horiki Showroom',
         nameJp: '堀木エリコショールーム',
@@ -113,7 +113,7 @@ const locations = [
         descriptionJp: '堀木エリコショールームは、京都に位置する現代的な空間で、著名な和紙アーティストである堀木エリコの革新的な作品を展示しています。堀木のデザインは、伝統的な和紙技術と現代的な美学を融合させ、大規模なインスタレーションや機能的なアートピースを生み出しています。訪問者は、照明要素や装飾アートを含むさまざまな和紙作品を探索でき、この伝統工芸の独特のテクスチャーと美しさを強調しています。ショールームはまた、建築空間における和紙アートの普及の場として機能し、数世代にわたるこの古代技術が進化し続けることを確実にしています​'
     },
     {
-        gif: '',
+        gif: 'image/FieldTrip/Kyoto/HosooTextileGallery/hosoo.mp4',
         image: '',
         nameEn: 'Hosoo Textile Gallery/Showroom',
         nameJp: '細尾テキスタイルギャラリー/ショールーム',
@@ -193,14 +193,24 @@ function getQueryParam(param) {
 // Update the page content based on the currentIndex
 function updateContent() {
     const location = locations[currentIndex];
-    const timestamp = new Date().getTime();  // Unique timestamp to force GIF reload
-    document.getElementById('background').src = location.gif + '?' + timestamp;
+    const timestamp = new Date().getTime(); // Unique timestamp to force reload if needed
+    const videoSource = document.getElementById('video-source');
+    const backgroundVideo = document.getElementById('background-video');
+
+    if (location.gif) {
+        videoSource.src = location.gif + '?' + timestamp; // Set the MP4 video file
+        backgroundVideo.load(); // Load the new video file
+    } else {
+        videoSource.src = ''; // Clear the video source if no GIF is available
+    }
+
     document.getElementById('location-image').src = location.image;
     document.getElementById('location-name-en').textContent = location.nameEn;
     document.getElementById('location-name-jp').textContent = location.nameJp;
     document.getElementById('description-en').textContent = location.descriptionEn;
     document.getElementById('description-jp').textContent = location.descriptionJp;
 }
+
 
 // Initialize the page based on the 'index' from the URL
 function init() {
@@ -306,3 +316,108 @@ function showDetail(index) {
         console.error('Invalid location index:', index);
     }
 }
+
+
+
+// Data for hover images and dot positions
+const hoverData = {
+    circle1: {
+        image: 'path/to/image1.jpg',
+        dots: [
+            { id: 'dot-1', top: '40%', left: '60%' }
+            // Add more dots as needed
+        ]
+    },
+    circle2: {
+        image: 'path/to/image2.jpg',
+        dots: [
+            { id: 'dot-2', top: '50%', left: '30%' },
+            { id: 'dot-3', top: '70%', left: '80%' }
+            // Add more dots as needed
+        ]
+    },
+    circle3: {
+        image: 'path/to/image2.jpg',
+        dots: [
+            { id: 'dot-2', top: '50%', left: '30%' },
+            { id: 'dot-3', top: '70%', left: '80%' }
+            // Add more dots as needed
+        ]
+    },
+    circle4: {
+        image: 'path/to/image2.jpg',
+        dots: [
+            { id: 'dot-2', top: '50%', left: '30%' },
+            { id: 'dot-3', top: '70%', left: '80%' }
+            // Add more dots as needed
+        ]
+    }
+    // Add other circles and their corresponding data
+};
+
+// Function to show the hover image and dots
+function showHoverImage(circleId) {
+    const hoverImageContainer = document.getElementById('hoverImageContainer');
+    const hoverImage = document.getElementById('hoverImage');
+    const hoverDotsContainer = document.getElementById('hoverDotsContainer');
+
+    // Get the data for the circle
+    const data = hoverData[circleId];
+
+    if (data) {
+        // Set the hover image source
+        hoverImage.src = data.image;
+
+        // Clear previous dots
+        hoverDotsContainer.innerHTML = '';
+
+        // Add new dots for this hover image
+        data.dots.forEach(dot => {
+            const dotElement = document.createElement('div');
+            dotElement.classList.add('hover-dot');
+            dotElement.style.top = dot.top;
+            dotElement.style.left = dot.left;
+            dotElement.setAttribute('onclick', `showDetail(${dot.id.split('-')[1]})`);
+
+            hoverDotsContainer.appendChild(dotElement);
+        });
+
+        // Show the hover image container
+        hoverImageContainer.style.display = 'block';
+    }
+}
+
+// Function to hide the hover image and dots
+function hideHoverImage() {
+    const hoverImageContainer = document.getElementById('hoverImageContainer');
+    hoverImageContainer.style.display = 'none';
+}
+
+// Event listeners for the circles
+document.querySelectorAll('.circle').forEach(circle => {
+    circle.addEventListener('mouseover', () => showHoverImage(circle.id));
+    circle.addEventListener('mouseout', hideHoverImage);
+});
+
+// Show hover image when clicking the sidebar
+function showHoverImageFromSidebar(index) {
+    // Find the corresponding circle id
+    let circleId;
+    for (let key in hoverData) {
+        if (hoverData[key].dots.some(dot => dot.id === `dot-${index + 1}`)) {
+            circleId = key;
+            break;
+        }
+    }
+
+    if (circleId) {
+        showHoverImage(circleId);
+    }
+}
+
+// Event listener for sidebar items
+document.querySelectorAll('.sidebar a').forEach((link, index) => {
+    link.addEventListener('click', () => {
+        showHoverImageFromSidebar(index);
+    });
+});
