@@ -121,7 +121,7 @@ const locations = [
         descriptionJp: '細尾テキスタイルギャラリーは、2019年9月にオープンし、1688年に遡る京都の西陣地区に位置する老舗の細尾会社の一部です。このギャラリーは、伝統的な日本のテキスタイル、特に着物や革新的な生地デザインの芸術を展示する中心地です。訪問者は、染色や織りの歴史、美しさ、技術を強調する展示を探索できます。また、ショールームでは、細尾の生地を使用した高級ライフスタイル製品のセレクションもあり、現代的なデザインと伝統的な職人技を融合させています'
     },
     {
-        gif: "",
+        gif: "image/FieldTrip/Naoshima/HiroshiSugimotoGallery/Hiroshi.mp4",
         image: 'image/FieldTrip/Naoshima/HiroshiSugimotoGallery/IMG_1034.jpeg',
         nameEn: 'Hiroshi Sugimoto Gallery',
         nameJp: '杉本博司ギャラリー',
@@ -129,7 +129,7 @@ const locations = [
         descriptionJp: '杉本博司ギャラリー、通称タイムコリドールは、著名なアートアイランドである直島に位置しています。2022年3月にオープンしたこのギャラリーでは、時間、光、知覚の探求で知られる著名な写真家でアーティストの杉本博司の作品が展示されています。ギャラリーは、杉本の写真、デザイン、彫刻を特徴としており、訪問者は彼の創造的ビジョンの文脈の中で、自然とアートの相互作用を体験することができます。安藤忠雄による建築は、杉本の作品を引き立て、時間と存在の本質についての反省を促します'
     },
     {
-        gif: "",
+        gif: "image/FieldTrip/Naoshima/ValleyGallery/valley.mp4",
         image: 'image/FieldTrip/Naoshima/ValleyGallery/IMG_1072.jpeg',
         nameEn: 'Valley Gallery',
         nameJp: 'ヴァレーギャラリー',
@@ -137,7 +137,7 @@ const locations = [
         descriptionJp: 'ヴァレーギャラリーは、著名な建築家安藤忠雄によってデザインされ、2022年3月に日本のアートアイランド直島にオープンしました。このギャラリーは、周囲の自然と調和するように設計されたトラペzoイド形状の建物で、神社を彷彿とさせるデザインが特徴です。ギャラリーでは、草間彌生の象徴的なナルシスの庭インスタレーションや、大沢剛のスラグ・ブッダ88が展示され、自然、アート、地域の歴史の関係が強調されています。建築は自然光、風、雨が流れ込み、訪問者と環境とのつながりを深めるようになっています'
     },
     {
-        gif: "",
+        gif: "image/FieldTrip/Naoshima/ChichuMuseum/chichu.mp4",
         image: 'image/FieldTrip/Naoshima/ChichuMuseum/IMG_1087.jpeg',
         nameEn: 'Chichu Art Museum',
         nameJp: '地中美術館',
@@ -145,7 +145,7 @@ const locations = [
         descriptionJp: '地中美術館は、建築家安藤忠雄によって設計された、主に地下に位置するユニークな現代アートミュージアムで、日本の直島にあります。2004年7月18日にオープンし、自然光を利用して展示物を照らすことで、没入感と静寂な環境を創出しています。見どころには、クロード・モネの睡蓮シリーズの大規模な作品のほか、ジェームズ・タレルやウォルター・ディ・マリアによるインスタレーションがあります。美術館は自然とアートの関係を強調しており、モネのデザインに触発された美しい庭園も備えています'
     },
     {
-        gif: "image/FieldTrip/Naoshima/TeshimaArtMuseum/My Movie 1.gif",
+        gif: "image/FieldTrip/Naoshima/TeshimaArtMuseum/Teshima.mp4",
         image: 'image/FieldTrip/Naoshima/TeshimaArtMuseum/teshima-artmuseum_kv_thumb_01_pc.jpg',
         nameEn: 'Teshima Art Museum',
         nameJp: '豊島美術館',
@@ -153,7 +153,7 @@ const locations = [
         descriptionJp: '豊島美術館は、建築家西沢立衛とアーティスト内藤玲によってデザインされたユニークな現代アートスペースで、日本の豊島に位置しています。2010年にオープンしたこの美術館は、水滴を模した形状で、周囲の田んぼとシームレスに統合されています。構造はコンクリート製の殻で、2つの楕円形の開口部があり、自然光、風、音が流れ込み、アートと自然のつながりが深まります。美術館には、単一のアート作品であるマトリックスが展示されており、水と光の相互作用を体現し、訪問者に没入感のある体験を提供します'
     },
     {
-        gif: "image/FieldTrip/Naoshima/ArtHouse/My Movie 2.gif",
+        gif: "image/FieldTrip/Naoshima/ArtHouse/ArtHouse.mp4",
         image: 'image/FieldTrip/Naoshima/ArtHouse/IMG_1241.jpeg',
         nameEn: 'Art Houses',
         nameJp: 'アートハウスプロジェクト',
@@ -161,7 +161,7 @@ const locations = [
         descriptionJp: 'アートハウスプロジェクトは、日本の直島にある小さな港町、本村に位置するユニークな取り組みです。このプロジェクトは、廃屋や寺社を含むコレクションであり、日本国内外のアーティストによってアートインスタレーションや展示スペースに変貌を遂げました。アートハウスは、伝統的な地域に溶け込んでおり、道からは目立たないように見えます。注目すべきインスタレーションには、LEDディスプレイを備えた門屋や、田植えによって設計された南寺があり、ジェームズ・タレルの作品が展示されています。各アートハウスは、訪問者にその場所とアーティストのビジョンを反映した独特のアート体験を提供します'
     },
     {
-        gif: "",
+        gif: "image/FieldTrip/Naoshima/BenesseHouseMuseum/Benesse.mp4",
         image: 'image/FieldTrip/Naoshima/BenesseHouseMuseum/IMG_1252.jpeg',
         nameEn: 'Benesse House Museum',
         nameJp: 'ベネッセハウス美術館',
