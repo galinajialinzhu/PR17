@@ -138,7 +138,7 @@ const locations = [
     },
     {
         gif: "image/FieldTrip/Naoshima/ChichuMuseum/chichu.mp4",
-        image: 'image/FieldTrip/Naoshima/ChichuMuseum/IMG_1087.jpeg',
+        image: 'image/FieldTrip/Naoshima/ChichuMuseum/Chichu.png',
         nameEn: 'Chichu Art Museum',
         nameJp: '地中美術館',
         descriptionEn: "The Chichu Art Museum, designed by architect Tadao Ando, is a unique contemporary art museum located mostly underground on Naoshima, Japan. Opened on July 18, 2004, the museum utilizes natural light to illuminate its exhibits, creating an immersive and serene environment. Key highlights include large-scale works from Claude Monet's Water Lilies series, as well as installations by artists like James Turrell and Walter De Maria. The museum emphasizes the relationship between nature and art, with a beautiful garden inspired by Monet's own designs​",
