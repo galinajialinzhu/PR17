@@ -53,72 +53,72 @@ const locations = [
         image: "image/FieldTrip/Nagoya/X'sFactory/x's.png",
         nameEn: "X's Factory",
         nameJp: "X's工場見学",
-        descriptionEn: "The X's Factory Tour in Tajimi offers visitors a unique opportunity to explore the art of tile-making in one of Japan's ceramic capitals. Tajimi is renowned for its rich tradition in ceramics and pottery, with a focus on Mino ware. During the tour, guests can witness the intricate processes involved in creating custom-tailored tiles, from production to glazing and firing methods. The factory, part of X'S Corporation, also emphasizes sustainability by recycling materials in tile production​",
-        descriptionJp: "X's工場見学は、陶器の中心地である多治見市で、タイル製作の芸術を探求するユニークな機会を提供します。多治見は、美濃焼きに焦点を当てた陶器と陶芸の豊かな伝統で知られています。見学中、訪問者はカスタムタイルの制作過程を目の前で観察し、製造から釉薬、焼成方法までの詳細を学ぶことができます。この工場は、X'S株式会社の一部であり、タイル生産において材料のリサイクルを重視した持続可能性も強調しています"
+        descriptionEn: "X's Factory is a creative space that combines art, technology, and craftsmanship, offering workshops and exhibitions. It serves as a hub for artists and makers, promoting innovative projects and collaborations in a dynamic environment​",
+        descriptionJp: "X's工場見学は、アート、テクノロジー、職人技を融合させたクリエイティブスペースで、ワークショップや展示を提供しています。アーティストやクリエイターのためのハブとして、革新的なプロジェクトやコラボレーションを促進する活気ある環境です。"
     },
     {
         gif: 'image/FieldTrip/Nagoya/YamadaSan/Yamada.mp4',
         image: 'image/FieldTrip/Nagoya/YamadaSan/Yamada.png',
         nameEn: 'Yamada-san Porcelain',
         nameJp: '山田さんの瀬戸磁器',
-        descriptionEn: "Yamada-san Porcelain is a renowned pottery establishment located in Seto, Aichi Prefecture, famous for its exquisite Seto ware. This type of porcelain has a rich history dating back over a thousand years, and Seto is recognized as one of Japan's six ancient kilns. Visitors to Yamada-san's factory can explore the traditional techniques of porcelain production, which include high-quality glazing and firing methods. The establishment also emphasizes the use of local materials, showcasing the unique artistry and craftsmanship that Seto ware is celebrated for​",
-        descriptionJp: '山田さんの瀬戸磁器は、愛知県の瀬戸市にある有名な陶器工房で、美しい瀬戸焼で知られています。この種類の磁器は千年以上の歴史を持ち、瀬戸は日本の六古窯の一つとして認識されています。山田さんの工場を訪れると、質の高い釉薬や焼成方法を含む伝統的な磁器製造技術を探求することができます。地元の素材を使用し、瀬戸焼が称賛される独特の芸術性と職人技を展示しています'
+        descriptionEn: "Yamada-san Porcelain, located in Seto, Aichi Prefecture, is renowned for exquisite Seto ware, boasting over a thousand years of history. Visitors can explore traditional porcelain production techniques, emphasizing local materials and craftsmanship that define Seto ware's artistry.​",
+        descriptionJp: '山田さん陶器は、愛知県瀬戸市に位置し、千年以上の歴史を誇る美しい瀬戸焼で知られています。訪問者は、地元の材料と職人技を強調した伝統的な陶器の製造技術を探求できます。'
     },
     {
         gif: 'image/FieldTrip/Kyoto/Yusai-tei/Yusaitei.mp4',
         image: 'image/FieldTrip/Kyoto/Yusai-tei/Yusaitei.png',
         nameEn: 'Yusai-tei Textile Studio',
         nameJp: '祐斎亭染色スタジオ',
-        descriptionEn: 'Yusai-tei is a textile studio located in Arashiyama, Kyoto, specializing in the traditional Japanese dyeing technique known as Yume Kōrozome. This historic studio, set in a Meiji-era building over 150 years old, offers visitors the chance to engage in dyeing experiences and learn about the intricate methods involved in producing beautifully crafted textiles. The studio also highlights the beauty of nature surrounding Arashiyama, enhancing the artistic experience​',
-        descriptionJp: '祐斎亭は、京都の嵐山に位置する染色スタジオで、夢こうろ染という伝統的な日本の染色技法を専門としています。この歴史的なスタジオは、150年以上の歴史を持つ明治時代の建物にあり、訪問者は染色体験を楽しみ、美しく仕立てられたテキスタイルを生み出すための複雑な方法について学ぶことができます。スタジオは、嵐山の自然の美しさを強調し、アート体験をより豊かなものにしています'
+        descriptionEn: 'Yusai-tei Textile Studio specializes in creating vibrant, hand-dyed fabrics using traditional techniques. Visitors can participate in workshops, exploring the art of dyeing and weaving while gaining insight into the cultural significance of Japanese textiles.​',
+        descriptionJp: '祐斎亭染色スタジオは、伝統的な技法を用いて鮮やかな手染めの布を制作する専門スタジオです。訪問者はワークショップに参加し、染色や織りの技術を探求し、日本の織物の文化的重要性を学ぶことができます。'
     },
     {
         gif: 'image/FieldTrip/Kyoto/Ittoku-sanTemple/Ittoku.mp4',
         image: 'image/FieldTrip/Kyoto/Ittoku-sanTemple/Ittoku.png',
         nameEn: 'Monk Ittoku-san: Zen & Healing Light',
         nameJp: '一徳さん: 禅と癒しの光',
-        descriptionEn: "Monk Ittoku-san is known for his teachings on the intersection of Zen philosophy and the concept of healing light. He emphasizes the importance of mindfulness and meditation as pathways to achieve inner peace and emotional balance. Through practices like Zazen (sitting meditation), individuals can connect with their true nature and harness an innate healing energy that promotes well-being. Ittoku-san's teachings often reflect the idea that this light within can help alleviate stress and foster a deeper understanding of oneself, ultimately guiding individuals toward a more harmonious life​",
-        descriptionJp: '一徳さんは、禅の哲学と癒しの光の概念の交差点についての教えで知られています。彼は、内なる平和と感情のバランスを達成するための道として、マインドフルネスや瞑想の重要性を強調しています。座禅などの実践を通じて、個人は真の自己とつながり、幸福を促進する内在する癒しのエネルギーを活用できます。一徳さんの教えは、内なる光がストレスを和らげ、自己理解を深める手助けをするという考えを反映しています。これにより、調和のとれた生活へと導くことができます'
+        descriptionEn: "Monk Ittoku-san teaches the intersection of Zen philosophy and healing light, emphasizing mindfulness and meditation for inner peace. Through Zazen, individuals connect with their true nature, harnessing innate healing energy for well-being and emotional balance.​",
+        descriptionJp: '一徳僧は、禅哲学と癒しの光の交差点について教え、内なる平和のためのマインドフルネスと瞑想の重要性を強調します。座禅を通じて、個人は真の自分とつながり、幸福と感情のバランスを促進する内なる癒しのエネルギーを活用します'
     },
     {
         gif: 'image/FieldTrip/Kyoto/KojimaShoten/kojima.mp4',
         image: 'image/FieldTrip/Kyoto/KojimaShoten/Kojima.png',
         nameEn: 'Kojima Shoten',
         nameJp: '小嶋商店',
-        descriptionEn: 'Kojima Shoten, a renowned lantern studio in Kyoto, specializes in traditional Kyo-chochin lanterns, crafted using the ancient jibari-shiki method. Visitors can participate in hands-on workshops where they learn to create their own paper lanterns. The experience includes a guided tour of the workshop, showcasing the meticulous process of lantern-making—from splitting bamboo to gluing washi paper. This immersive activity not only allows participants to appreciate the craftsmanship but also to understand the cultural significance of these lanterns in Japanese history',
-        descriptionJp: '小嶋商店は、京都にある有名な提灯工房で、伝統的な京提灯を専門に制作しています。訪問者は、提灯作りの手作りワークショップに参加することができ、古代のじばり式技法を学ぶことができます。この体験では、工房の見学を通じて、竹を割る作業から和紙を貼り付ける工程まで、提灯作りの細かなプロセスを紹介します。この没入型の活動は、参加者に職人技を感謝する機会を提供するだけでなく、提灯の日本の歴史における文化的重要性を理解することを可能にします'
+        descriptionEn: 'Kojima Shoten is a traditional Japanese store specializing in unique hand-crafted textiles and local crafts. It offers a variety of products, showcasing the rich heritage of craftsmanship while promoting sustainable practices within the community.',
+        descriptionJp: '小島商店は、ユニークな手作りの織物や地域の工芸品を専門とする伝統的な日本の店舗です。さまざまな製品を提供し、職人技の豊かな遺産を紹介し、地域内での持続可能な実践を促進しています。'
     },
     {
         gif: 'image/FieldTrip/Kyoto/POJStudio/POJ.mp4',
         image: 'image/FieldTrip/Kyoto/POJStudio/POJ.png',
         nameEn: 'POJ Studio',
         nameJp: 'POJスタジオ',
-        descriptionEn: ' POJ Studio is a Kyoto-based platform dedicated to connecting Japan’s master artisans with a global audience. Founded by Tina Koyama and Hana Tsukamoto, the studio focuses on preserving traditional crafts while offering modern lifestyle products. Their offerings include kintsugi workshops, where participants learn the art of repairing ceramics with gold, alongside a range of handmade items that embody the essence of Japanese craftsmanship. POJ Studio aims to foster a sustainable approach to living by promoting conscious consumption and celebrating the rich heritage of Japanese artisans',
-        descriptionJp: 'POJスタジオは、京都に拠点を置くプラットフォームで、日本の職人と世界をつなぐことに専念しています。ティナ・コヤマとハナ・ツカモトによって設立され、スタジオは伝統工芸を守りながら現代のライフスタイル製品を提供することに焦点を当てています。提供されるワークショップでは、参加者が金を使って陶器を修復する技術である金継ぎを学び、手作りのアイテムが日本の職人技の本質を体現しています。POJスタジオは、持続可能な生活へのアプローチを促進し、日本の職人の豊かな遺産を祝うことを目指しています'
+        descriptionEn: ' POJ Studio is a creative space specializing in design and art, offering workshops and exhibitions that foster innovation. It serves as a collaborative hub for artists, promoting unique projects and artistic exploration.',
+        descriptionJp: 'POJスタジオは、デザインとアートを専門とするクリエイティブスペースで、革新を育むワークショップや展示を提供しています。アーティストのためのコラボレーションハブとして、独自のプロジェクトと芸術的探求を促進します。'
     },
     {
         gif: 'image/FieldTrip/Kyoto/ZenNight/Zen.mp4',
         image: 'image/FieldTrip/Kyoto/ZenNight/Zen.png',
         nameEn: 'Zen Night Walk Kyoto',
         nameJp: '禅ナイトウォーク京都',
-        descriptionEn: "The Zen Night Walk is a unique event held at Kenninji Temple, Kyoto's oldest Zen temple, running from 7 PM to 9:30 PM until September 22, 2024. This immersive experience combines ambient soundscapes with artistic light installations, creating a serene atmosphere conducive to mindfulness. Visitors stroll through the temple's grounds while listening to 'neuro music,' scientifically designed to enhance relaxation and focus. Highlights include a projection of twin dragons and a sea of clouds in the temple's renowned dry landscape garden, Daioen, providing a captivating sensory experience",
-        descriptionJp: '禅ナイトウォークは、京都最古の禅寺である建仁寺で開催されるユニークなイベントで、2024年9月22日まで毎日午後7時から9時30分まで行われます。この没入型体験は、周囲の音風景とアートの光のインスタレーションを組み合わせ、マインドフルネスに適した穏やかな雰囲気を生み出します。訪問者は、リラクゼーションと集中力を高めるために科学的にデザインされた「ニューロミュージック」を聴きながら、寺院の敷地を散策します。見どころには、双龍のプロジェクションや、著名な枯山水庭園「大韵」での雲海があり、魅力的な感覚体験を提供します​'
+        descriptionEn: "The Zen Night Walk is a unique event held at Kenninji Temple, Kyoto's oldest Zen temple. This immersive experience combines ambient soundscapes with artistic light installations, creating a serene atmosphere conducive to mindfulness.",
+        descriptionJp: '禅ナイトウォークは、京都最古の禅寺である建仁寺で開催されるユニークなイベントです。この没入型体験は、周囲の音風景と芸術的な光のインスタレーションを組み合わせ、マインドフルネスにつながる穏やかな雰囲気を作り出します。​'
     },
     {
         gif: 'image/FieldTrip/Kyoto/ErikoHorikiShowroom/eriko.mp4',
         image: 'image/FieldTrip/Kyoto/ErikoHorikiShowroom/eriko.png',
         nameEn: 'Eriko Horiki Showroom',
         nameJp: '堀木エリコショールーム',
-        descriptionEn: "The Eriko Horiki Showroom is a contemporary space located in Kyoto, showcasing the innovative work of Eriko Horiki, a renowned washi paper artist. Horiki's designs bridge traditional Japanese washi techniques with modern aesthetics, producing large-scale installations and functional art pieces. Visitors can explore a variety of washi creations, including lighting elements and decorative artworks, which highlight the unique textures and beauty of this traditional craft. The showroom also serves as a hub for promoting washi art in architectural spaces, ensuring that this centuries-old craft continues to evolve​",
-        descriptionJp: '堀木エリコショールームは、京都に位置する現代的な空間で、著名な和紙アーティストである堀木エリコの革新的な作品を展示しています。堀木のデザインは、伝統的な和紙技術と現代的な美学を融合させ、大規模なインスタレーションや機能的なアートピースを生み出しています。訪問者は、照明要素や装飾アートを含むさまざまな和紙作品を探索でき、この伝統工芸の独特のテクスチャーと美しさを強調しています。ショールームはまた、建築空間における和紙アートの普及の場として機能し、数世代にわたるこの古代技術が進化し続けることを確実にしています​'
+        descriptionEn: "The Eriko Horiki Showroom in Tokyo features contemporary textile art, showcasing the innovative works of designer Eriko Horiki. Visitors can experience unique fabric designs and engage with the artistic process through exhibitions and workshops, highlighting the fusion of tradition and modernity.​",
+        descriptionJp: '堀木エリ子ショールームは東京にあり、デザイナー堀木エリ子の革新的な現代織物アートを展示しています。訪問者は独自の布デザインを体験し、展示やワークショップを通じて芸術的なプロセスに参加でき、伝統と現代の融合を強調しています​'
     },
     {
         gif: 'image/FieldTrip/Kyoto/HosooTextileGallery/hosoo.mp4',
         image: 'image/FieldTrip/Kyoto/HosooTextileGallery/hosoo.png',
         nameEn: 'Hosoo Textile Gallery/Showroom',
         nameJp: '細尾テキスタイルギャラリー/ショールーム',
-        descriptionEn: "The Hosoo Textile Gallery, opened in September 2019, is part of the long-established Hosoo company located in Kyoto's Nishijin district, which dates back to 1688. This gallery serves as a hub for showcasing the art of traditional Japanese textiles, particularly focusing on kimono and innovative fabric designs. Visitors can explore exhibitions that highlight the history, beauty, and techniques of dyeing and weaving. The showroom also features a selection of luxury lifestyle products crafted from Hosoo fabrics, combining modern design with traditional craftsmanship",
-        descriptionJp: '細尾テキスタイルギャラリーは、2019年9月にオープンし、1688年に遡る京都の西陣地区に位置する老舗の細尾会社の一部です。このギャラリーは、伝統的な日本のテキスタイル、特に着物や革新的な生地デザインの芸術を展示する中心地です。訪問者は、染色や織りの歴史、美しさ、技術を強調する展示を探索できます。また、ショールームでは、細尾の生地を使用した高級ライフスタイル製品のセレクションもあり、現代的なデザインと伝統的な職人技を融合させています'
+        descriptionEn: "The Hosoo Textile Gallery, located in Kyoto, showcases the rich tradition of Nishijin textile weaving. Visitors can explore exquisite fabrics, attend workshops, and learn about the history and techniques behind this intricate art form, celebrating Japanese textile craftsmanship.",
+        descriptionJp: '細尾織物ギャラリーは京都にあり、にしじん織りの豊かな伝統を展示しています。訪問者は美しい布地を探索し、ワークショップに参加し、この複雑なアートフォームの歴史と技法について学ぶことができ、日本の織物技術を祝います。'
     },
     {
         gif: "image/FieldTrip/Naoshima/HiroshiSugimotoGallery/Hiroshi.mp4",
