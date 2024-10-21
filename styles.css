@@ -85,31 +85,30 @@ body, html {
     z-index: -1; /* This places the video behind all other content */
 }
 
-/* Map Container */
+
 .map-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;          /* Full viewport width */
-    height: 100vh;         /* Full viewport height */
+    position: fixed;  /* Keeps the container in the viewport */
+    top: 50%;  /* Centers it vertically */
+    left: 60%;  /* Centers it horizontally */
+    transform: translate(-50%, -50%);  /* Shifts the element back by 50% of its own width and height to achieve perfect centering */
+    width: 80%; /* Adjust the width based on your needs */
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;            /* Ensure it's above the background (which has z-index: -1) */
+    background-size: cover; /* Ensures the GIF covers the entire container */
+    background-position: center;
 }
 
-/* Map Image */
 .map-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;     /* Ensures the image covers the entire container */
+    width: 80%; /* Make the image responsive */
+    height: auto;
 }
-
 
 .circle {
     position: absolute;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,13 +116,14 @@ body, html {
     z-index: 2;
     width: 5vw;
     height: 5vw;
-    background-color: rgba(170, 170, 170, 0.5);
+    background: radial-gradient(circle, rgba(255, 223, 70, 0.8) 0%, rgba(255, 223, 70, 0.5) 50%, rgba(255, 223, 70, 0) 100%);
 }
 
 .dot {
    position: absolute;
     width: 10px;
     height: 10px;
+    background-color: rgb(79, 64, 48);
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transition for both scale and color */
@@ -148,6 +148,7 @@ body, html {
     padding: 5px;
     border-radius: 3px;
     font-size: 12px;
+    visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s ease;
 }
@@ -161,6 +162,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%);
 }
 
 #background-video {
@@ -178,7 +180,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 70%;
     color: white;
 }
 
@@ -187,18 +189,21 @@ body, html {
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     text-align: center;
     margin-right: 15%;
-    
+    margin-top: 50%;
+}
+.right{
+    margin-top: 50%;
 }
 
 .left img {
     width: 25vw;
     height: 25vw;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 150px;
+    max-height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -208,10 +213,11 @@ body, html {
     margin: 10px 0;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 p {
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin: 10px 0;
     text-align: left;
 }
@@ -276,26 +282,24 @@ p {
     display: none;
 }
 
-/* Sidebar */
 .sidebar {
     position: fixed;
     left: 0px;
     top: 80px;
     width: 350px;
-    height: 70vh;          /* Full viewport height */
-    background-color: transparent; /* Transparent background */
+    height: 70vh; /* Full viewport height */
+    background-color: transparent; /* Fully transparent background */
     padding: 20px;
     color: white;
-    overflow-y: auto;       /* Keeps the content scrollable */
-    scrollbar-width: none;  /* Hides the scrollbar in Firefox */
-    z-index: 1;             /* Set this to be above the map and background */
+    overflow-y: auto; /* Keeps the content scrollable internally if needed */
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
 }
 
 .sidebar::-webkit-scrollbar {
     display: none; /* Hides the scrollbar in WebKit browsers like Chrome, Safari */
 }
 
-/* Sidebar List Items */
+
 .sidebar ul {
     list-style-type: none;
     padding: 5px;
@@ -315,18 +319,17 @@ p {
     text-decoration: underline;
 }
 
-
 /* Background Container */
 .background-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
-    z-index: -1;          /* Must be lower than .map-container's z-index */
-    transition: background-image 0.5s ease-in-out;
+    z-index: -1; /* Ensure it's behind all content */
+    transition: background-image 0.5s ease-in-out; /* Add smooth transition for background image */
 }
 
 
@@ -336,5 +339,20 @@ p {
 }
 
 .background-container {
-    background-image: url('image/0DD998BC-0704-4BEC-ABA5-596956B8AB94.JPG'); /* Use a known path for testing */
+    background-image: url('image/image.jpg'); /* Use a known path for testing */
+}
+
+
+.hero-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* Full screen height */
+}
+
+.hero-logo {
+    max-width: 500px; /* Set the maximum width of the logo */
+    width: 100%; /* Make the logo responsive */
+    height: auto;
 }

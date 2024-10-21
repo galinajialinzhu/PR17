@@ -33,6 +33,11 @@
                     <a href="#" onclick="openYoutubeVideo('https://youtu.be/1v5N7VNIPr0')">TOKYO</a>
                     <ul>
                         <li><a data-dot="dot-1" href="detail-page.html?index=0">Big Cat Bang @ Ginza Six</a></li>
+                        <li><a data-dot="dot-22" href="detail-page.html?index=21">Atelier Muji</a></li>
+                        <li><a data-dot="dot-23" href="detail-page.html?index=22">Mori Museum</a></li>
+                        <li><a data-dot="dot-24" href="detail-page.html?index=23">21_21 Design Sight</a></li>
+                        <li><a data-dot="dot-25" href="detail-page.html?index=24">TeamLab Planets</a></li>
+                        <li><a data-dot="dot-26" href="detail-page.html?index=25">Yamagiwa Light Showroom</a></li>
                     </ul>
                 </li>
                 <li>
@@ -77,15 +82,36 @@
         <div class="map-container">
 
             
-            <img src="image/map_jpn1.png" alt="Map" class="map-image">
+            <img src="image/map_jpn.png" alt="Map" class="map-image">
             <!-- Map dots and functionality here -->
-            <div class="circle" style ="top: 65%; left: 55%;" id="circle1">
-                <div class="dot" id="dot-1" style="top: 40%; left: 60%;" onclick="showDetail(0)">
+            <div class="circle" style ="top: 72%; left: 54%;" id="circle1">
+                <div class="dot" id="dot-1" style="top: 58%; left: 15%;" onclick="showDetail(0)">
                     <span class="tooltip">Big Cat Bang @ Ginza Six</span>
                 </div>
+                
+                <div class="dot" id="dot-22" style="top: 61%; left: 25%;" onclick="showDetail(21)">
+                    <span class="tooltip">Atelier Muji</span>
+                </div>
+                
+                <div class="dot" id="dot-23" style="top: 35%; left: 40%;" onclick="showDetail(22)">
+                    <span class="tooltip">Mori Museum</span>
+                </div>
+                
+                <div class="dot" id="dot-24" style="top: 43%; left: 65%;" onclick="showDetail(23)">
+                    <span class="tooltip">21_21 Design Sight</span>
+                </div>
+                
+                <div class="dot" id="dot-25" style="top: 75%; left: 70%;" onclick="showDetail(24)">
+                    <span class="tooltip">TeamLab Planets</span>
+                </div>
+                
+                <div class="dot" id="dot-26" style="top: 59%; left: 70%;" onclick="showDetail(25)">
+                    <span class="tooltip">Yamagiwa Light Showroom</span>
+                </div>
+                
             </div>
 
-            <div class="circle" style ="top: 70%; left: 41%;" id="circle2">
+            <div class="circle" style ="top: 73%; left: 41%;" id="circle2">
                 <div class="dot" id="dot-2" style="top: 40%; left:30%;" onclick="showDetail(1)">
                     <span class="tooltip">Pi Photonics</span>
                 </div>
@@ -109,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="circle" style ="top: 72%; left: 35%;" id="circle3">
+            <div class="circle" style ="top: 74%; left: 35%;" id="circle3">
                 <div class="dot" id="dot-9" style="top: 20%; left: 40%;" onclick="showDetail(8)">
                     <span class="tooltip">Yusai-tei Textile Studio</span>
                 </div>
@@ -158,6 +184,9 @@
 
     <!-- Hero Section -->
     <div id="hero" class="section hidden">
+        <div class="hero-logo-container">
+            <img src="image/HealingLight.png" alt="Logo" class="hero-logo">
+        </div>
     </div>
 
     <!-- Projects Section -->

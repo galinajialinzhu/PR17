@@ -2,55 +2,55 @@
 const locations = [
     {
         gif: 'image/FieldTrip/Tokyo/BigCatBang/BigCatBang.mp4',
-        image: 'image/map_jpn.png',
+        image: 'image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png',
         nameEn: 'Big Cat Bang @ Ginza Six',
         nameJp: 'ビッグキャットバン @ ギンザシックス',
-        descriptionEn: "Big Cat Bang is an art installation by Kenji Yanobe at Ginza Six, Tokyo, celebrating its seventh anniversary. Unveiled on April 5, 2024, it features astronaut cats in a spaceship resembling Taro Okamoto's Tower of the Sun. This piece is part of Yanobe's 'Ship's Cat' series, inspired by maritime cats that protected sailors. The installation includes a scale model of the Tower of the Sun and aims to convey messages of fortune and exploration​.",
-        descriptionJp: 'ビッグキャットバン @ ギンザシックス は、ヤノベケンジによる東京・ギンザシックスでの7周年記念のアートインスタレーションです。2024年4月5日に公開されるこの作品は、岡本太郎の太陽の塔に似た宇宙船に宇宙飛行士の猫が乗っている様子が描かれています。この作品は、船員を守る海猫にインスピレーションを得たヤノベの「船猫」シリーズの一部です。インスタレーションには太陽の塔のスケールモデルが含まれており、幸運と探検のメッセージを伝えることを目的としています。'
+        descriptionEn: "BIG CAT BANG is an imaginative art installation by Kenji Yanobe at Ginza Six, showcasing astronaut cats in a spaceship resembling the Tower of the Sun. Unveiled in April 2024, it combines traditional craftsmanship with contemporary design, celebrating the relationship between art and the cosmos​.",
+        descriptionJp: 'ビッグキャットバン @ ギンザシックス は、ギンザシックスにあるヤノベケンジによる想像力豊かなアートインスタレーションで、太陽の塔に似た宇宙船に宇宙飛行士の猫を展示しています。2024年4月に公開されるこのインスタレーションは、伝統的な職人技と現代的なデザインを融合し、アートと宇宙の関係を祝福しています。'
     },
     {
         gif: 'image/FieldTrip/Nagoya/PiPhotonics/Piphotonics.mp4',
-        image: '',
+        image: 'image/FieldTrip/Nagoya/PiPhotonics/Piphotonics.png',
         nameEn: 'Pi Photonics',
         nameJp: '株式会社パイフォトニクス',
-        descriptionEn: 'Pi Photonics is a dynamic startup based in Hamamatsu, Japan, founded in 2006 by Takahiro Ikeda, a former MIT researcher in optics. The company specializes in designing and manufacturing advanced optical technologies, notably their flagship product, HOLOLIGHT. This innovative lighting solution combines high-intensity LEDs with unique optical elements to create highly visible light patterns, making it particularly useful for safety applications in industrial settings​.',
-        descriptionJp: 'パイフォトニクス は、浜松、日本に拠点を置くダイナミックなスタートアップで、2006年に池田隆宏によって設立されました。彼は元MITの光学研究者です。この会社は、高度な光学技術の設計と製造を専門としており、特にフラッグシップ製品であるHOLOLIGHT（ホロライト）が注目されています。この革新的な照明ソリューションは、高出力のLEDと独自の光学要素を組み合わせて、高い視認性を持つ光パターンを生成します。このため、特に工業環境での安全アプリケーションに役立っています'
+        descriptionEn: "Pi Photonics specializes in advanced photonic technologies, focusing on innovative solutions for optical communication and sensing applications, harnessing light's properties to enhance performance and efficiency in various industries.",
+        descriptionJp: ' パイフォトニクスは、先進的なフォトニクス技術を専門とし、光通信やセンシングアプリケーションの革新的なソリューションに焦点を当て、さまざまな産業での性能と効率を向上させるために光の特性を活用しています。'
     },
     {
         gif: 'image/FieldTrip/Nagoya/SuzusanShibori/SuzusanShibori.mp4',
-        image: '',
+        image: 'image/FieldTrip/Nagoya/SuzusanShibori/SuzusanShibori.png',
         nameEn: 'Suzusan Shibori Light',
         nameJp: '株式会社スズサン',
-        descriptionEn: 'Suzusan is a design label rooted in the traditional Shibori technique, practiced in Arimatsu for over 100 years. Suzusan’s Shibori Lights combine traditional Japanese craftsmanship with modern aesthetics, creating unique three-dimensional lighting designs. Founded by Hiroyuki Murase, the company blends the ancient art of Shibori with contemporary design to produce textiles that bring an elegant and artisanal touch to home lighting',
-        descriptionJp: 'スズサンは、有松で100年以上にわたり受け継がれてきた伝統的な絞り染め技術に根ざしたデザインブランドです。スズサンのシボリライトは、日本の伝統工芸と現代の美学を融合させたユニークな3次元照明デザインを提供します。創設者の村瀬弘行は、古代の技術を現代的なデザインに取り入れ、照明にエレガントで職人技の光をもたらしています​'
+        descriptionEn: 'Suzusan Shibori Light showcases traditional Japanese tie-dye techniques, transforming fabric into stunning lighting fixtures that reflect the beauty of nature, blending craftsmanship with modern design for a unique aesthetic appeal.',
+        descriptionJp: '鈴さんしぼりライトは、伝統的な日本の絞り染め技術を展示し、布を美しい照明器具に変え、自然の美しさを反映させ、職人技と現代デザインを融合させた独自の美的魅力を生み出します。​'
     },
     {
         gif: 'image/FieldTrip/Nagoya/MinnaNoMori/MinnaNoMori.mp4',
-        image: '',
+        image: 'image/FieldTrip/Nagoya/MinnaNoMori/MinnaNoMori.png',
         nameEn: 'Minna no Mori Gifu Media Cosmos',
         nameJp: 'みんなの森 ぎふメディアコスモス',
-        descriptionEn: 'Minna no Mori Gifu Media Cosmos is a multipurpose facility located in Gifu City, Japan. It includes the Gifu City Chuo Library, which serves as a "Knowledge Hub," alongside a Community Activity Exchange Center and a Multicultural Plaza. The facility is designed to cultivate knowledge, culture, and community connections, featuring exhibition galleries for various activities. Architect Toyo Ito designed this space to provide an inviting atmosphere for learning and collaboration',
-        descriptionJp: 'みんなの森ぎふメディアコスモスは、日本の岐阜市にある複合施設です。岐阜市中央図書館を「知識のハブ」としてはじめ、市民活動交流センターや多文化交流プラザを備えています。この施設は、知識や文化、地域のつながりを育むことを目的としており、さまざまな活動のための展示ギャラリーもあります。建築家の伊東豊雄によってデザインされ、学びと協働のための魅力的な空間を提供しています'
+        descriptionEn: 'Minna no Mori Gifu Media Cosmos is a cultural facility in Gifu, Japan, offering a blend of media art, interactive exhibits, and community engagement, fostering creativity and collaboration among visitors through innovative technology and artistic expression.',
+        descriptionJp: 'みんなの森ぎふメディアコスモスは、日本の岐阜にある文化施設で、メディアアート、インタラクティブな展示、地域交流を融合させ、革新的な技術と芸術表現を通じて訪問者の創造性と協力を促進します。'
     },
     {
         gif: 'image/FieldTrip/Nagoya/MinoTown/MinoTown.mp4',
-        image: '',
+        image: 'image/FieldTripA/Nagoya/MinoTown/MinoTown.png',
         nameEn: 'Mino Town',
         nameJp: '美濃市',
-        descriptionEn: 'Mino Town is renowned for its production of Mino Washi, a traditional Japanese paper that has been crafted for over 1,300 years. The town is also famous for its chochin lanterns, which are made from washi and bamboo. These lanterns have a rich history in Japan and are celebrated for their beauty and craftsmanship. Visitors can experience the creation of these lanterns and explore the artistry involved during local festivals, including the Mino Washi Akari Art Festival, where lantern art showcases the potential of Mino Washi​',
-        descriptionJp: '美濃市は、1300年以上にわたって作られてきた伝統的な和紙である美濃和紙の生産地として知られています。また、町は和紙と竹から作られた提灯でも有名です。これらの提灯は日本の豊かな歴史を持ち、その美しさと職人技が称賛されています。訪問者は、地元の祭りや美濃和紙あかりアート展などで提灯の制作体験をし、和紙の可能性を展示するアートを楽しむことができます'
+        descriptionEn: 'Mino Town, located in Gifu Prefecture, Japan, is famous for its rich history in traditional washi paper making and stunning natural landscapes, offering visitors a glimpse into Japanese craftsmanship and serene rural life.​',
+        descriptionJp: '美濃市は岐阜県に位置し、伝統的な和紙作りの豊かな歴史と美しい自然景観で知られ、訪れる人々に日本の職人技と穏やかな田舎の生活を垣間見せます。'
     },
     {
         gif: 'image/FieldTrip/Nagoya/MinoWashiPaking/MinoWashiMaking.mp4',
-        image: '',
+        image: 'image/FieldTrip/Nagoya/MinoWashiPaking/MinoWashiMaking.png',
         nameEn: 'Mino Washi Paper Making',
         nameJp: '美濃和紙作り',
-        descriptionEn: "Mino Washi no Sato Hall is a cultural facility in Mino City, dedicated to showcasing the art of Mino Washi, a traditional Japanese paper known for its beauty and durability. Visitors can engage in hands-on activities to learn about washi-making techniques. Nearby, the Warabi Paper Company offers insights into the production of high-quality washi. Together, these sites provide a rich experience of Mino's paper-making heritage",
-        descriptionJp: '美濃和紙の里会館は、岐阜県美濃市にある伝統的な日本の和紙である美濃和紙の技術を紹介する文化施設です。訪問者は、和紙製作技術を学ぶ体験活動に参加できます。近くのわらび製紙会社では、高品質な和紙の生産についての洞察を提供しています。これらの施設を通じて、美濃の和紙作りの遺産を深く体験できます'
+        descriptionEn: "Mino Washi no Sato Hall in Mino City celebrates Mino Washi paper artistry, offering hands-on activities. Nearby, Warabi Paper Company showcases high-quality washi production, enriching visitors' experience of the region's vibrant paper-making heritage.",
+        descriptionJp: '美濃和紙の里会館は、美濃市で美濃和紙の芸術を称え、実践的な活動を提供しています。近くの蕨製紙所では、質の高い和紙の生産を展示し、地域の豊かな和紙作りの遺産を訪問者に伝えます。'
     },
     {
         gif: "image/FieldTrip/Nagoya/X'sFactory/x's.mp4",
-        image: '',
+        image: "image/FieldTrip/Nagoya/X'sFactory/x's.png",
         nameEn: "X's Factory",
         nameJp: "X's工場見学",
         descriptionEn: "The X's Factory Tour in Tajimi offers visitors a unique opportunity to explore the art of tile-making in one of Japan's ceramic capitals. Tajimi is renowned for its rich tradition in ceramics and pottery, with a focus on Mino ware. During the tour, guests can witness the intricate processes involved in creating custom-tailored tiles, from production to glazing and firing methods. The factory, part of X'S Corporation, also emphasizes sustainability by recycling materials in tile production​",
@@ -58,7 +58,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Nagoya/YamadaSan/Yamada.mp4',
-        image: '',
+        image: 'image/FieldTrip/Nagoya/YamadaSan/Yamada.png',
         nameEn: 'Yamada-san Porcelain',
         nameJp: '山田さんの瀬戸磁器',
         descriptionEn: "Yamada-san Porcelain is a renowned pottery establishment located in Seto, Aichi Prefecture, famous for its exquisite Seto ware. This type of porcelain has a rich history dating back over a thousand years, and Seto is recognized as one of Japan's six ancient kilns. Visitors to Yamada-san's factory can explore the traditional techniques of porcelain production, which include high-quality glazing and firing methods. The establishment also emphasizes the use of local materials, showcasing the unique artistry and craftsmanship that Seto ware is celebrated for​",
@@ -66,7 +66,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Kyoto/Yusai-tei/Yusaitei.mp4',
-        image: '',
+        image: 'image/FieldTrip/Kyoto/Yusai-tei/Yusaitei.png',
         nameEn: 'Yusai-tei Textile Studio',
         nameJp: '祐斎亭染色スタジオ',
         descriptionEn: 'Yusai-tei is a textile studio located in Arashiyama, Kyoto, specializing in the traditional Japanese dyeing technique known as Yume Kōrozome. This historic studio, set in a Meiji-era building over 150 years old, offers visitors the chance to engage in dyeing experiences and learn about the intricate methods involved in producing beautifully crafted textiles. The studio also highlights the beauty of nature surrounding Arashiyama, enhancing the artistic experience​',
@@ -74,15 +74,15 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Kyoto/Ittoku-sanTemple/Ittoku.mp4',
-        image: '',
+        image: 'image/FieldTrip/Kyoto/Ittoku-sanTemple/Ittoku.png',
         nameEn: 'Monk Ittoku-san: Zen & Healing Light',
         nameJp: '一徳さん: 禅と癒しの光',
         descriptionEn: "Monk Ittoku-san is known for his teachings on the intersection of Zen philosophy and the concept of healing light. He emphasizes the importance of mindfulness and meditation as pathways to achieve inner peace and emotional balance. Through practices like Zazen (sitting meditation), individuals can connect with their true nature and harness an innate healing energy that promotes well-being. Ittoku-san's teachings often reflect the idea that this light within can help alleviate stress and foster a deeper understanding of oneself, ultimately guiding individuals toward a more harmonious life​",
         descriptionJp: '一徳さんは、禅の哲学と癒しの光の概念の交差点についての教えで知られています。彼は、内なる平和と感情のバランスを達成するための道として、マインドフルネスや瞑想の重要性を強調しています。座禅などの実践を通じて、個人は真の自己とつながり、幸福を促進する内在する癒しのエネルギーを活用できます。一徳さんの教えは、内なる光がストレスを和らげ、自己理解を深める手助けをするという考えを反映しています。これにより、調和のとれた生活へと導くことができます'
     },
     {
-        gif: '',
-        image: '',
+        gif: 'image/FieldTrip/Kyoto/KojimaShoten/kojima.mp4',
+        image: 'image/FieldTrip/Kyoto/KojimaShoten/Kojima.png',
         nameEn: 'Kojima Shoten',
         nameJp: '小嶋商店',
         descriptionEn: 'Kojima Shoten, a renowned lantern studio in Kyoto, specializes in traditional Kyo-chochin lanterns, crafted using the ancient jibari-shiki method. Visitors can participate in hands-on workshops where they learn to create their own paper lanterns. The experience includes a guided tour of the workshop, showcasing the meticulous process of lantern-making—from splitting bamboo to gluing washi paper. This immersive activity not only allows participants to appreciate the craftsmanship but also to understand the cultural significance of these lanterns in Japanese history',
@@ -90,7 +90,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Kyoto/POJStudio/POJ.mp4',
-        image: '',
+        image: 'image/FieldTrip/Kyoto/POJStudio/POJ.png',
         nameEn: 'POJ Studio',
         nameJp: 'POJスタジオ',
         descriptionEn: ' POJ Studio is a Kyoto-based platform dedicated to connecting Japan’s master artisans with a global audience. Founded by Tina Koyama and Hana Tsukamoto, the studio focuses on preserving traditional crafts while offering modern lifestyle products. Their offerings include kintsugi workshops, where participants learn the art of repairing ceramics with gold, alongside a range of handmade items that embody the essence of Japanese craftsmanship. POJ Studio aims to foster a sustainable approach to living by promoting conscious consumption and celebrating the rich heritage of Japanese artisans',
@@ -98,7 +98,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Kyoto/ZenNight/Zen.mp4',
-        image: '',
+        image: 'image/FieldTrip/Kyoto/ZenNight/Zen.png',
         nameEn: 'Zen Night Walk Kyoto',
         nameJp: '禅ナイトウォーク京都',
         descriptionEn: "The Zen Night Walk is a unique event held at Kenninji Temple, Kyoto's oldest Zen temple, running from 7 PM to 9:30 PM until September 22, 2024. This immersive experience combines ambient soundscapes with artistic light installations, creating a serene atmosphere conducive to mindfulness. Visitors stroll through the temple's grounds while listening to 'neuro music,' scientifically designed to enhance relaxation and focus. Highlights include a projection of twin dragons and a sea of clouds in the temple's renowned dry landscape garden, Daioen, providing a captivating sensory experience",
@@ -106,7 +106,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Kyoto/ErikoHorikiShowroom/eriko.mp4',
-        image: '',
+        image: 'image/FieldTrip/Kyoto/ErikoHorikiShowroom/eriko.png',
         nameEn: 'Eriko Horiki Showroom',
         nameJp: '堀木エリコショールーム',
         descriptionEn: "The Eriko Horiki Showroom is a contemporary space located in Kyoto, showcasing the innovative work of Eriko Horiki, a renowned washi paper artist. Horiki's designs bridge traditional Japanese washi techniques with modern aesthetics, producing large-scale installations and functional art pieces. Visitors can explore a variety of washi creations, including lighting elements and decorative artworks, which highlight the unique textures and beauty of this traditional craft. The showroom also serves as a hub for promoting washi art in architectural spaces, ensuring that this centuries-old craft continues to evolve​",
@@ -114,7 +114,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Kyoto/HosooTextileGallery/hosoo.mp4',
-        image: '',
+        image: 'image/FieldTrip/Kyoto/HosooTextileGallery/hosoo.png',
         nameEn: 'Hosoo Textile Gallery/Showroom',
         nameJp: '細尾テキスタイルギャラリー/ショールーム',
         descriptionEn: "The Hosoo Textile Gallery, opened in September 2019, is part of the long-established Hosoo company located in Kyoto's Nishijin district, which dates back to 1688. This gallery serves as a hub for showcasing the art of traditional Japanese textiles, particularly focusing on kimono and innovative fabric designs. Visitors can explore exhibitions that highlight the history, beauty, and techniques of dyeing and weaving. The showroom also features a selection of luxury lifestyle products crafted from Hosoo fabrics, combining modern design with traditional craftsmanship",
@@ -122,60 +122,92 @@ const locations = [
     },
     {
         gif: "image/FieldTrip/Naoshima/HiroshiSugimotoGallery/Hiroshi.mp4",
-        image: 'image/FieldTrip/Naoshima/HiroshiSugimotoGallery/IMG_1034.jpeg',
+        image: 'image/FieldTrip/Naoshima/HiroshiSugimotoGallery/Hiroshi.png',
         nameEn: 'Hiroshi Sugimoto Gallery',
         nameJp: '杉本博司ギャラリー',
-        descriptionEn: "The Hiroshi Sugimoto Gallery, known as the Time Corridor, is located on Naoshima, a renowned art island in Japan. Opened in March 2022, this gallery showcases the renowned works of Hiroshi Sugimoto, a prominent photographer and artist celebrated for his explorations of time, light, and perception. The gallery features Sugimoto's photography, designs, and sculptures, allowing visitors to experience the interplay of nature and art within the context of his creative vision. The architecture by Tadao Ando complements Sugimoto's work, encouraging reflection on the nature of time and existence​",
-        descriptionJp: '杉本博司ギャラリー、通称タイムコリドールは、著名なアートアイランドである直島に位置しています。2022年3月にオープンしたこのギャラリーでは、時間、光、知覚の探求で知られる著名な写真家でアーティストの杉本博司の作品が展示されています。ギャラリーは、杉本の写真、デザイン、彫刻を特徴としており、訪問者は彼の創造的ビジョンの文脈の中で、自然とアートの相互作用を体験することができます。安藤忠雄による建築は、杉本の作品を引き立て、時間と存在の本質についての反省を促します'
+        descriptionEn: "The Hiroshi Sugimoto Gallery, located in Tokyo, exhibits the innovative works of photographer and artist Hiroshi Sugimoto, known for his ethereal seascapes and architectural photography, exploring the relationship between time, memory, and perception.",
+        descriptionJp: '杉本博司ギャラリーは東京にあり、写真家でアーティストの杉本博司の革新的な作品を展示しています。彼のエーテル的な海景や建築写真は、時間、記憶、知覚の関係を探求しています。'
     },
     {
         gif: "image/FieldTrip/Naoshima/ValleyGallery/valley.mp4",
-        image: 'image/FieldTrip/Naoshima/ValleyGallery/IMG_1072.jpeg',
+        image: 'image/FieldTrip/Naoshima/ValleyGallery/valley.png',
         nameEn: 'Valley Gallery',
         nameJp: 'ヴァレーギャラリー',
-        descriptionEn: "The Valley Gallery, designed by renowned architect Tadao Ando, opened in March 2022 on Naoshima, Japan's famous art island. This gallery is unique in its trapezoidal design, resembling a shrine and harmonizing with the surrounding nature. The gallery features Yayoi Kusama's iconic Narcissus Garden installation, as well as Tsuyoshi Ozawa's Slag Buddha 88, which emphasizes the relationship between nature, art, and local history. The architecture allows natural light, wind, and rain to flow through, enhancing visitors' connection with the environment",
-        descriptionJp: 'ヴァレーギャラリーは、著名な建築家安藤忠雄によってデザインされ、2022年3月に日本のアートアイランド直島にオープンしました。このギャラリーは、周囲の自然と調和するように設計されたトラペzoイド形状の建物で、神社を彷彿とさせるデザインが特徴です。ギャラリーでは、草間彌生の象徴的なナルシスの庭インスタレーションや、大沢剛のスラグ・ブッダ88が展示され、自然、アート、地域の歴史の関係が強調されています。建築は自然光、風、雨が流れ込み、訪問者と環境とのつながりを深めるようになっています'
+        descriptionEn: "Valley Gallery is a contemporary art space on Naoshima, designed by Tadao Ando. It showcases works by various artists, focusing on the interplay of art and nature. The gallery complements Naoshima's rich artistic landscape",
+        descriptionJp: 'バレーギャラリーは、安藤忠雄が設計した直島の現代アートスペースです。アートと自然の相互作用に焦点を当て、さまざまなアーティストの作品を展示しています。ギャラリーは直島の豊かな芸術的景観を引き立てます。'
     },
     {
         gif: "image/FieldTrip/Naoshima/ChichuMuseum/chichu.mp4",
         image: 'image/FieldTrip/Naoshima/ChichuMuseum/Chichu.png',
         nameEn: 'Chichu Art Museum',
         nameJp: '地中美術館',
-        descriptionEn: "The Chichu Art Museum, designed by architect Tadao Ando, is a unique contemporary art museum located mostly underground on Naoshima, Japan. Opened on July 18, 2004, the museum utilizes natural light to illuminate its exhibits, creating an immersive and serene environment. Key highlights include large-scale works from Claude Monet's Water Lilies series, as well as installations by artists like James Turrell and Walter De Maria. The museum emphasizes the relationship between nature and art, with a beautiful garden inspired by Monet's own designs​",
-        descriptionJp: '地中美術館は、建築家安藤忠雄によって設計された、主に地下に位置するユニークな現代アートミュージアムで、日本の直島にあります。2004年7月18日にオープンし、自然光を利用して展示物を照らすことで、没入感と静寂な環境を創出しています。見どころには、クロード・モネの睡蓮シリーズの大規模な作品のほか、ジェームズ・タレルやウォルター・ディ・マリアによるインスタレーションがあります。美術館は自然とアートの関係を強調しており、モネのデザインに触発された美しい庭園も備えています'
+        descriptionEn: "The Chichu Art Museum, designed by Tadao Ando, integrates art and nature, featuring works by Claude Monet, James Turrell, and Walter de Maria. Its underground layout minimizes environmental impact, allowing natural light to enhance the visitor experience​",
+        descriptionJp: '安藤忠雄が設計した地中美術館は、クロード・モネ、ジェームズ・タレル、ウォルター・デ・マリアの作品を展示し、芸術と自然を融合しています。地下のレイアウトは環境への影響を最小限に抑え、自然光が訪問者の体験を向上させます。'
     },
     {
         gif: "image/FieldTrip/Naoshima/TeshimaArtMuseum/Teshima.mp4",
-        image: 'image/FieldTrip/Naoshima/TeshimaArtMuseum/teshima-artmuseum_kv_thumb_01_pc.jpg',
+        image: 'image/FieldTrip/Naoshima/TeshimaArtMuseum/Teshima.png',
         nameEn: 'Teshima Art Museum',
         nameJp: '豊島美術館',
-        descriptionEn: 'The Teshima Art Museum, designed by architect Ryue Nishizawa and artist Rei Naito, is a unique contemporary art space located on Teshima Island in Japan. Opened in 2010, the museum resembles a droplet of water, seamlessly integrating with the surrounding rice fields. The structure features a concrete shell with two elliptical openings, allowing natural light, air, and sound to flow through, enhancing the connection between art and nature. The museum houses a single artwork, Matrix, which embodies the interplay of water and light, creating an immersive experience for visitors',
-        descriptionJp: '豊島美術館は、建築家西沢立衛とアーティスト内藤玲によってデザインされたユニークな現代アートスペースで、日本の豊島に位置しています。2010年にオープンしたこの美術館は、水滴を模した形状で、周囲の田んぼとシームレスに統合されています。構造はコンクリート製の殻で、2つの楕円形の開口部があり、自然光、風、音が流れ込み、アートと自然のつながりが深まります。美術館には、単一のアート作品であるマトリックスが展示されており、水と光の相互作用を体現し、訪問者に没入感のある体験を提供します'
+        descriptionEn: 'The Teshima Art Museum, designed by Ryue Nishizawa, seamlessly integrates art and nature, resembling a droplet of water. It features a stunning installation by Rei Naito, emphasizing the interaction between space, light, and the surrounding landscape',
+        descriptionJp: 'テシマアートミュージアムは、西沢立衛によって設計され、アートと自然が一体となった水滴のような形をしています。内藤礼の驚くべきインスタレーションがあり、空間、光、周囲の風景との相互作用を強調しています'
     },
     {
         gif: "image/FieldTrip/Naoshima/ArtHouse/ArtHouse.mp4",
-        image: 'image/FieldTrip/Naoshima/ArtHouse/IMG_1241.jpeg',
+        image: 'image/FieldTrip/Naoshima/ArtHouse/ArtHouse.png',
         nameEn: 'Art Houses',
         nameJp: 'アートハウスプロジェクト',
-        descriptionEn: "The Art House Project is a unique initiative located in Honmura, a small port town on Naoshima Island, Japan. This project involves a collection of abandoned houses, a temple, and a shrine, which have been transformed into art installations and exhibition spaces by various artists from Japan and abroad. The Art Houses blend seamlessly into the traditional neighborhood, making them appear unassuming from the street. Notable installations include Kadoya, featuring LED displays, and Minamidera, designed by Tadao Ando, showcasing James Turrell's work. Each house offers visitors a distinct artistic experience that reflects both the location and the artists' visions",
-        descriptionJp: 'アートハウスプロジェクトは、日本の直島にある小さな港町、本村に位置するユニークな取り組みです。このプロジェクトは、廃屋や寺社を含むコレクションであり、日本国内外のアーティストによってアートインスタレーションや展示スペースに変貌を遂げました。アートハウスは、伝統的な地域に溶け込んでおり、道からは目立たないように見えます。注目すべきインスタレーションには、LEDディスプレイを備えた門屋や、田植えによって設計された南寺があり、ジェームズ・タレルの作品が展示されています。各アートハウスは、訪問者にその場所とアーティストのビジョンを反映した独特のアート体験を提供します'
+        descriptionEn: "The Art House Project in Honmura, Naoshima, transforms abandoned homes, a shrine, and a temple into contemporary art installations. Artists from Japan and abroad have reimagined these spaces, creating unique, immersive experiences that blend art with the local environment",
+        descriptionJp: 'アートハウスプロジェクトは、直島の本村で、廃屋、神社、寺を現代アートのインスタレーションに変えています。日本国内外のアーティストがこれらの空間を再構築し、アートと地域環境が融合したユニークで没入感のある体験を提供しています'
     },
     {
         gif: "image/FieldTrip/Naoshima/BenesseHouseMuseum/Benesse.mp4",
-        image: 'image/FieldTrip/Naoshima/BenesseHouseMuseum/IMG_1252.jpeg',
+        image: 'image/FieldTrip/Naoshima/BenesseHouseMuseum/Benesse.png',
         nameEn: 'Benesse House Museum',
         nameJp: 'ベネッセハウス美術館',
-        descriptionEn: "The Benesse House Museum, located on Naoshima Island, is a unique blend of contemporary art museum and resort hotel, designed by renowned architect Tadao Ando. Opened in 1992, the museum features a diverse collection of artworks inspired by the island's natural surroundings and the interplay of nature, art, and architecture. Guests can enjoy 24-hour access to the museum if they stay at the hotel. The museum complex includes several buildings, such as the Oval, Park, and Beach, each showcasing different artistic experiences and outdoor installations, including Yayoi Kusama’s iconic pumpkin sculpture​",
-        descriptionJp: 'ベネッセハウス美術館は、直島に位置する現代アート美術館とリゾートホテルのユニークな融合で、著名な建築家安藤忠雄によって設計されました。1992年にオープンしたこの美術館は、島の自然環境に触発された多様なアートコレクションを展示しています。ホテルに宿泊するゲストは、24時間いつでも美術館にアクセスできる特典があります。美術館コンプレックスは、さまざまなアート体験と屋外インスタレーションを展示するオーバル、パーク、ビーチなどの複数の建物で構成されています。中でも、草間彌生の象徴的なかぼちゃの彫刻が有名です​'
+        descriptionEn: "The Benesse House Museum is a unique museum-hotel on Naoshima Island, combining contemporary art and accommodation. Designed by Tadao Ando, it showcases a diverse collection of modern art within an architecturally stunning environment, fostering a close relationship between nature and art​​",
+        descriptionJp: 'ベネッセハウスミュージアムは、現代アートと宿泊施設を組み合わせた直島のユニークなミュージアムホテルです。安藤忠雄が設計したこの美術館は、建築的に素晴らしい環境の中で、自然とアートの密接な関係を育む多様な現代アートコレクションを展示しています。​'
     },
-    // {
-    //     gif: '',
-    //     image: '',
-    //     nameEn: '',
-    //     nameJp: '',
-    //     descriptionEn: '',
-    //     descriptionJp: ''
-    // },
+    {
+        gif: 'image/FieldTrip/Tokyo/AtelierMuji/Muji.mp4',
+        image: 'image/FieldTrip/Tokyo/AtelierMuji/Muji.png',
+        nameEn: 'Atelier Muji',
+        nameJp: 'アトリエ無印',
+        descriptionEn: "Atelier Muji is a creative space located in Ginza, Tokyo, dedicated to exploring design, craftsmanship, and sustainable living. It hosts a variety of exhibitions and workshops, showcasing Muji's philosophy of simplicity and functionality. The gallery features works from both local and international artists, encouraging dialogue about everyday items and their impact on life​",
+        descriptionJp: "アトリエ無印良品は、東京の銀座に位置するクリエイティブスペースで、デザイン、工芸、持続可能な生活を探求しています。さまざまな展示やワークショップを開催し、無印良品のシンプルさと機能性の哲学を紹介しています。ギャラリーには、地元および国際的なアーティストの作品が展示されており、日常品とその生活への影響についての対話を促しています​"
+    },
+    {
+        gif: 'image/FieldTrip/Tokyo/MoriMuseum/mori.mp4',
+        image: 'image/FieldTrip/Tokyo/AtelierMuji/Mori.png',
+        nameEn: 'Mori Art Museum',
+        nameJp: '森美術館',
+        descriptionEn: "The Mori Art Museum, located on the 53rd floor of the Mori Tower in Roppongi, Tokyo, showcases contemporary art from Japan and beyond. Established in 2003, it hosts rotating exhibitions, focusing on modern artistic expressions and cultural discussions, alongside stunning city views​",
+        descriptionJp: '森美術館は、東京・六本木の森タワー53階に位置し、日本や世界中の現代アートを展示しています。2003年に設立され、現代の芸術表現や文化的議論に焦点を当てた展覧会を開催し、素晴らしい都市の景観を楽しめます'
+    },
+    {
+        gif: 'image/FieldTrip/Tokyo/21_21/2121.mp4',
+        image: 'image/FieldTrip/Tokyo/21_21/2121.png',
+        nameEn: '21_21 Design Sight',
+        nameJp: '21_21デザインサイト',
+        descriptionEn: '21_21 Design Sight is a design museum located in Tokyo Midtown, founded by fashion designer Issey Miyake in 2007. The museum focuses on exploring the relationship between everyday life and design through various exhibitions and events. It aims to inspire visitors by showcasing innovative design concepts and encouraging interaction with everyday objects, making design more accessible',
+        descriptionJp: '21_21デザインサイトは、2007年にファッションデザイナーの三宅一生によって設立された東京ミッドタウンに位置するデザインミュージアムです。この美術館は、日常生活とデザインの関係を探求することに焦点を当て、さまざまな展示やイベントを通じて来訪者を刺激します。革新的なデザインコンセプトを紹介し、日常の物とのインタラクションを促進することで、デザインをより身近なものにすることを目指しています​'
+    },
+    {
+        gif: 'image/FieldTrip/Tokyo/Teamlab/teamlab.mp4',
+        image: 'image/FieldTrip/Tokyo/Teamlab/Teamlab.png',
+        nameEn: 'teamLab Planets',
+        nameJp: 'チームラボプラネッツ',
+        descriptionEn: 'TeamLab Planets in Toyosu, Tokyo, offers an immersive experience where art and nature intertwine through interactive installations. Visitors walk through water and digital landscapes, engaging with artworks that change with their movements. This sensory-rich environment includes installations like the "Floating Flower Garden" and "Universe of Fire Particles," inviting exploration and creativity',
+        descriptionJp: 'チームラボプラネッツは、東京・豊洲に位置し、アートと自然が融合した没入型体験を提供しています。訪問者は水の中を歩き、デジタル風景を通過しながら、自らの動きに応じて変化するアート作品に触れます。「浮遊する花園」や「火粒子の宇宙」などのインスタレーションが含まれ、探索と創造性を促します'
+    },
+    {
+        gif: 'image/FieldTrip/Tokyo/Yamagiwa/Yamagiwa.mp4',
+        image: 'image/FieldTrip/Tokyo/Yamagiwa/yamagiwa.png',
+        nameEn: 'Yamagiwa Light Showroom',
+        nameJp: '山際照明ショールーム',
+        descriptionEn: "The Yamagiwa Light Showroom in Tokyo showcases the brand's commitment to 'The Art of Lighting.' Visitors can explore innovative lighting designs, including original products and collaborations with international brands. The showroom reflects Japanese craftsmanship and the aesthetic quality of lighting, providing a unique experience for design enthusiasts",
+        descriptionJp: 'ヤマギワショールームは、東京にあり「光のアート」をテーマにしたブランドのコンセプトを展示しています。来館者は、オリジナル製品や国際的なブランドとのコラボレーションを含む革新的な照明デザインを探索でき、和の職人技と美的品質を反映したユニークな体験が提供されます'
+    },
     // Add more locations as needed
 ];
 // Data for different locations (as defined before)
