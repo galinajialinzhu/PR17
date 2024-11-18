@@ -9,6 +9,8 @@
 </head>
 <body>
     
+    <div class="cursor-dot"></div>
+
 
     <div id="logo-container">
         <img src="image/school-logo.png" alt="Logo" id="logo">
@@ -27,64 +29,13 @@
     <!-- Map Section -->
     
     <div id="map" class="section">
-        <div class="sidebar">
-            <ul>
-                <li>
-                    <a href="#" onclick="openYoutubeVideo('https://youtu.be/1v5N7VNIPr0')">TOKYO</a>
-                    <ul>
-                        <li><a data-dot="dot-1" href="detail-page.html?index=0">Big Cat Bang @ Ginza Six</a></li>
-                        <li><a data-dot="dot-22" href="detail-page.html?index=21">Atelier Muji</a></li>
-                        <li><a data-dot="dot-23" href="detail-page.html?index=22">Mori Museum</a></li>
-                        <li><a data-dot="dot-24" href="detail-page.html?index=23">21_21 Design Sight</a></li>
-                        <li><a data-dot="dot-25" href="detail-page.html?index=24">TeamLab Planets</a></li>
-                        <li><a data-dot="dot-26" href="detail-page.html?index=25">Yamagiwa Light Showroom</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="openYoutubeVideo('https://youtu.be/PsQEaHFoqXs')">NAGOYA</a>
-                    <ul>
-                        <li><a data-dot="dot-2" href="detail-page.html?index=1">Pi Photonics</a></li>
-                        <li><a data-dot="dot-3" href="detail-page.html?index=2">Suzusan Shibori Light</a></li>
-                        <li><a data-dot="dot-4" href="detail-page.html?index=3">Minna no Mori Gifu Media Cosmos</a></li>
-                        <li><a data-dot="dot-5" href="detail-page.html?index=4">Mino Town</a></li>
-                        <li><a data-dot="dot-6" href="detail-page.html?index=5">Mino Washi Paper Making</a></li>
-                        <li><a data-dot="dot-7" href="detail-page.html?index=6">X's Factory</a></li>
-                        <li><a data-dot="dot-8" href="detail-page.html?index=7">Yamada-san Porcelain</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="openYoutubeVideo('https://youtu.be/_oGorfESN8U')">KYOTO</a>
-                    <ul>
-                        <li><a data-dot="dot-9" href="detail-page.html?index=8">Yusai-tei Textile Studio</a></li>
-                        <li><a data-dot="dot-10" href="detail-page.html?index=9">Monk Ittoku-san: Zen & Healing Light</a></li>
-                        <li><a data-dot="dot-11" href="detail-page.html?index=10">Kojima Shoten</a></li>
-                        <li><a data-dot="dot-12" href="detail-page.html?index=11">POJ Studio</a></li>
-                        <li><a data-dot="dot-13" href="detail-page.html?index=12">Zen Night Walk Kyoto</a></li>
-                        <li><a data-dot="dot-14" href="detail-page.html?index=13">Eriko Horiki Showroom</a></li>
-                        <li><a data-dot="dot-15" href="detail-page.html?index=14">Hosoo Textile Gallery/Showroom</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="openYoutubeVideo('https://youtu.be/ocPmr-2fuA8')">NAOSHIMA</a>
-                    <ul>
-                        <li><a data-dot="dot-16" href="detail-page.html?index=15">Hiroshi Sugimoto Gallery</a></li>
-                        <li><a data-dot="dot-17" href="detail-page.html?index=16">Valley Gallery</a></li>
-                        <li><a data-dot="dot-18" href="detail-page.html?index=17">Chichu Art Museum</a></li>
-                        <li><a data-dot="dot-19" href="detail-page.html?index=18">Teshima Art Museum</a></li>
-                        <li><a data-dot="dot-20" href="detail-page.html?index=19">Art Houses</a></li>
-                        <li><a data-dot="dot-21" href="detail-page.html?index=20">Benesse House Museum</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-
         <div class="map-container">
 
-            
-            <img src="image/map_jpn.png" alt="Map" class="map-image">
+            <img src="image/image.jpg" alt="Dynamic Map Image" id="dynamic-image" class="dynamic-image">
+            <img src="image/map_JP.png" alt="Map" class="map-image">
+
             <!-- Map dots and functionality here -->
-            <div class="circle" style ="top: 72%; left: 54%;" id="circle1">
+            <div class="circle" style ="top: 44%; left: 72%;" id="circle1">
                 <div class="dot" id="dot-1" style="top: 58%; left: 15%;" onclick="showDetail(0)">
                     <span class="tooltip">Big Cat Bang @ Ginza Six</span>
                 </div>
@@ -110,8 +61,9 @@
                 </div>
                 
             </div>
+            
 
-            <div class="circle" style ="top: 73%; left: 41%;" id="circle2">
+            <div class="circle" style ="top: 46%; left: 47%;" id="circle2">
                 <div class="dot" id="dot-2" style="top: 40%; left:30%;" onclick="showDetail(1)">
                     <span class="tooltip">Pi Photonics</span>
                 </div>
@@ -135,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="circle" style ="top: 74%; left: 35%;" id="circle3">
+            <div class="circle" style ="top: 48%; left: 35%;" id="circle3">
                 <div class="dot" id="dot-9" style="top: 20%; left: 40%;" onclick="showDetail(8)">
                     <span class="tooltip">Yusai-tei Textile Studio</span>
                 </div>
@@ -159,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="circle" style ="top: 75%; left: 27%;" id="circle4">
+            <div class="circle" style ="top: 48%; left: 23%;" id="circle4">
                 <div class="dot" id="dot-16" style="top: 30%; left: 15%;" onclick="showDetail(15)">
                     <span class="tooltip">Hiroshi Sugimoto Gallery</span>
                 </div>
@@ -179,8 +131,66 @@
                     <span class="tooltip">Benesse House Museum</span>
                 </div>
             </div>
+            
+        </div>
+
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#" class="city" onclick="openYoutubeVideo('https://youtu.be/1v5N7VNIPr0')">TOKYO</a>
+                    <ul>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-1" href="detail-page.html?index=0">Big Cat Bang @ Ginza Six</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/AtelierMuji/Muji.png" alt="Icon" class="icon"><a data-dot="dot-22" href="detail-page.html?index=21">Atelier Muji</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-23" href="detail-page.html?index=22">Mori Museum</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-24" href="detail-page.html?index=23">21_21 Design Sight</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-25" href="detail-page.html?index=24">TeamLab Planets</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-26" href="detail-page.html?index=25">Yamagiwa Light Showroom</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="city" onclick="openYoutubeVideo('https://youtu.be/PsQEaHFoqXs')">NAGOYA</a>
+                    <ul>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-2" href="detail-page.html?index=1">Pi Photonics</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-3" href="detail-page.html?index=2">Suzusan Shibori Light</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-4" href="detail-page.html?index=3">Minna no Mori Gifu Media Cosmos</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-5" href="detail-page.html?index=4">Mino Town</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-6" href="detail-page.html?index=5">Mino Washi Paper Making</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-7" href="detail-page.html?index=6">X's Factory</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-8" href="detail-page.html?index=7">Yamada-san Porcelain</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="city" onclick="openYoutubeVideo('https://youtu.be/_oGorfESN8U')">KYOTO</a>
+                    <ul>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-9" href="detail-page.html?index=8">Yusai-tei Textile Studio</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-10" href="detail-page.html?index=9">Monk Ittoku-san: Zen&Healing Light</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-11" href="detail-page.html?index=10">Kojima Shoten</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-12" href="detail-page.html?index=11">POJ Studio</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-13" href="detail-page.html?index=12">Zen Night Walk Kyoto</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-14" href="detail-page.html?index=13">Eriko Horiki Showroom</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-15" href="detail-page.html?index=14">Hosoo Textile Gallery/Showroom</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="city" onclick="openYoutubeVideo('https://youtu.be/ocPmr-2fuA8')">NAOSHIMA</a>
+                    <ul>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-16" href="detail-page.html?index=15">Hiroshi Sugimoto Gallery</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-17" href="detail-page.html?index=16">Valley Gallery</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-18" href="detail-page.html?index=17">Chichu Art Museum</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-19" href="detail-page.html?index=18">Teshima Art Museum</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-20" href="detail-page.html?index=19">Art Houses</a></li>
+                        <li><img src="image/FieldTrip/Tokyo/BigCatBang/BigCatBang.png" alt="Icon" class="icon"><a data-dot="dot-21" href="detail-page.html?index=20">Benesse House Museum</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
+
+
+
+
+
 
     <!-- Hero Section -->
     <div id="hero" class="section hidden">
@@ -191,14 +201,246 @@
 
     <!-- Projects Section -->
     <div id="projects" class="section hidden">
+
+        
     </div>
 
     <!-- Students Section -->
-    <div id="students" class="section hidden">
+    <div id="Lecture&Workshops" class="section hidden">
     </div>
 
     <!-- Faculty Section -->
-    <div id="faculty" class="section hidden">
+    <div id="students&faculty" class="section hidden">
+
+        <div class="profile-sidebar">
+            <div class="profile-sidebar-option" onclick="showCategory('student-profiles')">
+                <img src="image/student-icon.png" alt="Students Icon">
+                <p>Students</p>
+            </div>
+            <div class="profile-sidebar-option" onclick="showCategory('faculty-profiles')">
+                <img src="image/faculty-icon.png" alt="Faculty Icon">
+                <p>Faculty</p>
+            </div>
+        </div>
+        
+        <div class="profile-main-content">
+            <div id="student-profiles" class="profile-category">
+                <div class="profile-column">
+                    <h2>Tama Art University</h2>
+                    <div class="profile-card">
+                        <a href="">
+                            <img src="image/Student/Ucchii.png" alt="Student Ucchii">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Ucchii</h3>
+                            <p>Oil painting</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student1">
+                            <img src="image/Student/Hibiki.jpg" alt="Student 1">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Hibiki</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Naru.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Narumi</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Shirori.png" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Shiori</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Ochan.png" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>O-Chan</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Yuuka.png" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Yuuka</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Kein.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Kein</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Xin.JPEG" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Xinyu</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Suzuka.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Suzuka</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Anri.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Anri</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <!-- Additional student profiles for Tama Art University -->
+                </div>
+        
+                <div class="profile-column">
+                    <h2>ArtCenter</h2>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Galina.jpeg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Galina Zhu</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Cynthia.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Cynthia Qin</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Cheng.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Cheng Cui</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Doris.JPG" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Doris</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Tina.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Tina</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Ming.JPG" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Ming</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Morris.jpg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Morris</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/jingwen.JPG" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Jingwen</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <a href="https://example.com/student2">
+                            <img src="image/Student/Jackson.jpeg" alt="Student 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Jackson</h3>
+                            <p>Major: Example Major</p>
+                        </div>
+                    </div>
+        
+                    <!-- Additional student profiles for ArtCenter -->
+                </div>
+            </div>
+        
+            <div id="faculty-profiles" class="profile-category hidden">
+                <div class="profile-column">
+                    <h2>Tama Art University</h2>
+                    <div class="profile-card">
+                        <a href="https://example.com/faculty1">
+                            <img src="image/faculty1.jpg" alt="Faculty 1">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Professor Name</h3>
+                            <p>Major: Example Department</p>
+                        </div>
+                    </div>
+                    <!-- Additional faculty profiles for Tama Art University -->
+                </div>
+        
+                <div class="profile-column">
+                    <h2>ArtCenter</h2>
+                    <div class="profile-card">
+                        <a href="https://example.com/faculty2">
+                            <img src="image/faculty2.jpg" alt="Faculty 2">
+                        </a>
+                        <div class="profile-info">
+                            <h3>Professor Name</h3>
+                            <p>Major: Example Department</p>
+                        </div>
+                    </div>
+                    <!-- Additional faculty profiles for ArtCenter -->
+                </div>
+            </div>
+        </div>
+        
+
+        
     </div>
 
 
@@ -206,8 +448,8 @@
         <button onclick="showSection('hero')">Overview</button>
         <button onclick="showSection('map')" class="active">Field Trip</button>
         <button onclick="showSection('projects')">Projects</button>
-        <button onclick="showSection('students')">Students</button>
-        <button onclick="showSection('faculty')">Faculty</button>
+        <button onclick="showSection('Lecture&Workshops')">Special Class</button>
+        <button onclick="showSection('students&faculty')">students & faculty</button>
     </div>
 
     <script src="script.js"></script>

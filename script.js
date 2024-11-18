@@ -34,7 +34,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Nagoya/MinoTown/MinoTown.mp4',
-        image: 'image/FieldTripA/Nagoya/MinoTown/MinoTown.png',
+        image: 'image/FieldTrip/Nagoya/MinoTown/MinoTown.png',
         nameEn: 'Mino Town',
         nameJp: '美濃市',
         descriptionEn: 'Mino Town, located in Gifu Prefecture, Japan, is famous for its rich history in traditional washi paper making and stunning natural landscapes, offering visitors a glimpse into Japanese craftsmanship and serene rural life.​',
@@ -178,7 +178,7 @@ const locations = [
     },
     {
         gif: 'image/FieldTrip/Tokyo/MoriMuseum/mori.mp4',
-        image: 'image/FieldTrip/Tokyo/AtelierMuji/Mori.png',
+        image: 'image/FieldTrip/Tokyo/MoriMuseum/Mori.png',
         nameEn: 'Mori Art Museum',
         nameJp: '森美術館',
         descriptionEn: "The Mori Art Museum, located on the 53rd floor of the Mori Tower in Roppongi, Tokyo, showcases contemporary art from Japan and beyond. Established in 2003, it hosts rotating exhibitions, focusing on modern artistic expressions and cultural discussions, alongside stunning city views​",
@@ -313,39 +313,117 @@ function openYoutubeVideo(videoUrl) {
 }
 
 
+// Loop through each sidebar item
 // Get all sidebar items
 const sidebarItems = document.querySelectorAll('.sidebar a[data-dot]');
 
-// Loop through each sidebar item
-sidebarItems.forEach(item => {
-    item.addEventListener('mouseover', function() {
-        // Get the corresponding dot ID from the data attribute
+// Define the images array to match each item
+const images = [
+    "image/FieldTrip/Tokyo/BigCatBang/BigCatBang.jpeg", // index 0
+    "image/FieldTrip/Tokyo/AtelierMuji/Muji.jpeg",      // index 1
+    "image/FieldTrip/Tokyo/MoriMuseum/Mori.jpeg", // index 3
+    "image/FieldTrip/Tokyo/21_21/2121.jpeg",      // index 4
+    "image/FieldTrip/Tokyo/Teamlab/teamlab.jpeg", // index 5
+    "image/FieldTrip/Tokyo/Yamagiwa/yamagiwa.jpeg",      // index 6
+    "image/FieldTrip/Nagoya/PiPhotonics/Piphotonics.jpeg", // index 7
+    "image/FieldTrip/Nagoya/SuzusanShibori/SuzusanShibori.jpeg",      // index 8
+    "image/FieldTrip/Nagoya/MinnaNoMori/MinnaNoMori.jpeg", // index 9
+    "", // index 10
+    "", // index 11
+    "", // index 
+    "", // index 
+    "", // index 
+    "", // index 
+    "", // index 
+    "", // index 
+    // Add more paths as needed
+];
+function updateDynamicImage(index) {
+    const dynamicImage = document.getElementById("dynamic-image");
+    if (!dynamicImage) return;
+
+    // Apply fade-out class
+    dynamicImage.classList.add("fade-out");
+
+    // Wait for the fade-out transition to complete, then change the image source
+    setTimeout(() => {
+        if (images[index]) {
+            dynamicImage.src = images[index]; // Update image source based on the index
+        }
+        // Remove fade-out and trigger fade-in effect
+        dynamicImage.classList.remove("fade-out");
+    }, 500); // Delay matches the transition duration in the CSS
+}
+
+// Update this code to call updateDynamicImage instead of directly setting src
+sidebarItems.forEach((item, index) => {
+    item.addEventListener('mouseover', function () {
         const dotId = this.getAttribute('data-dot');
         const dot = document.getElementById(dotId);
 
-        // Add a hover effect to the dot
         if (dot) {
-            dot.style.backgroundColor = 'red'; // Change the color to red on hover
+            dot.style.backgroundColor = 'white';
         }
+
+        updateDynamicImage(index); // Call the function to update the image with fade effect
     });
 
-    item.addEventListener('mouseout', function() {
-        // Get the corresponding dot ID
+    item.addEventListener('mouseout', function () {
         const dotId = this.getAttribute('data-dot');
         const dot = document.getElementById(dotId);
 
-        // Remove the hover effect
         if (dot) {
-            dot.style.backgroundColor = 'black'; // Reset the color when not hovered
+            dot.style.backgroundColor = 'rgba(255, 255, 255, 0)';
         }
     });
 });
 
 function showDetail(index) {
     if (locations[index]) {
-        window.location.href = `detail-page.html?index=${index}`;
+        updateDynamicImage(index); // Trigger fade-in/out effect
+        setTimeout(() => {
+            window.location.href = `detail-page.html?index=${index}`;
+        }, 500); // Delay navigation to allow fade-out to complete
     } else {
         console.error('Invalid location index:', index);
     }
 }
 
+
+
+function showDetail(index) {
+    const dynamicImage = document.getElementById("dynamic-image");
+
+    if (locations[index]) {
+        dynamicImage.src = images[index]; // 更新图片A的src
+        window.location.href = `detail-page.html?index=${index}`; // 页面重定向
+    } else {
+        console.error('Invalid location index:', index);
+    }
+}
+
+
+// 获取光点的元素
+const cursorDot = document.querySelector('.cursor-dot');
+
+// 监听鼠标移动事件
+document.addEventListener('mousemove', (e) => {
+    cursorDot.style.left = `${e.pageX}px`;
+    cursorDot.style.top = `${e.pageY}px`;
+});
+
+// 获取所有可点击元素（链接、按钮等）
+const clickableElements = document.querySelectorAll('a, button, .clickable');
+
+// 为每个可点击元素添加事件监听
+clickableElements.forEach((el) => {
+    // 鼠标进入时让光点变大
+    el.addEventListener('mouseenter', () => {
+        cursorDot.classList.add('hover');
+    });
+
+    // 鼠标离开时恢复光点大小
+    el.addEventListener('mouseleave', () => {
+        cursorDot.classList.remove('hover');
+    });
+});
