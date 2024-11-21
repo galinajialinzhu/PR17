@@ -330,10 +330,10 @@ const images = [
     "image/FieldTrip/Nagoya/MinnaNoMori/MinnaNoMori.jpeg", // index 9
     "", // index 10
     "", // index 11
-    "", // index 
-    "", // index 
-    "", // index 
-    "", // index 
+    "", // index 12
+    "", // index 13
+    "", // index 14
+    "", // index 15
     "", // index 
     "", // index 
     // Add more paths as needed
@@ -427,3 +427,15 @@ clickableElements.forEach((el) => {
         cursorDot.classList.remove('hover');
     });
 });
+
+
+
+function showCategory(categoryId) {
+    // Hide all categories
+    document.querySelectorAll('.profile-category').forEach(category => {
+        category.classList.add('hidden');
+    });
+
+    // Show the selected category
+    document.getElementById(categoryId).classList.remove('hidden');
+}
