@@ -240,7 +240,97 @@
 
     <!-- Students Section -->
     <div id="Lecture&Workshops" class="section hidden">
+        <div class="lecture-workshops-section">
+            <!-- Background Container -->
+            <div class="lecture-workshops-bg" style="background-image: url('image/project/background.jpeg');"></div>
+            
+            <!-- Left Section for Detail Information -->
+            <div class="lecture-details">
+                <h1 id="lecture-title">Lecture & Workshops</h1>
+                <p id="lecture-description">
+                    Explore inspiring lectures and interactive workshops curated for creativity and growth.
+                </p>
+            </div>
+            
+            <!-- Right Section for Cards -->
+            <div class="lecture-cards">
+                <!-- Card 1 -->
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'Japanese Culture Course', 
+                'Ms. Daido has been teaching 4 classes on Japanese culture during the program. She discussed with us the unique humanities and culture of Japan, from the Japanese people clothing, food, housing and transportation to cultural beliefs. She also analyzed the causes of Japan unique cultural characteristics from a historical perspective.', 
+                ['image/specialclass/Japan.png'])">
+                    <img src="image/specialclass/Japan.png" alt="Card 1">
+                    <h3>Japanese Culture</h3>
+                </div>
+                <!-- Card 2 -->
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'LED Workshop', 
+                'In the LED Workshop, students learn how to use Arduino for programming. They use Arduino to control the changes of lights. They also learn some basic circuits and the use of rhino grasshopper. These knowledge can strengthen students ability to make models.', 
+                ['image/specialclass/LED.png', 'image/specialclass/LED1.png'])">
+                    <img src="image/specialclass/LED.png" alt="Card 1">
+                    <h3>LED Workshop</h3>
+                </div>
+                <!-- Card 1 -->
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'PLArain', 
+                'PLArain is a material that can be freely shaped. Through the lecture on plarain, students can freely explore this material. They can heat plarain in hot water to make it a plastic material, or use pure mateial to make lighting effects. This is a free exploration workshop.', 
+                ['image/specialclass/PLA1.png', 'image/specialclass/PLA.png', 'image/specialclass/Plarain.png'])">
+                    <img src="image/specialclass/PLA.png" alt="Card 1">
+                    <h3>PLArain</h3>
+                </div>
+                <!-- Card 1 -->
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'OneDay Tokyo Trip', 
+                'Students visited a lighting store in downtown Tokyo to learn about the design of lighting and how it is used in real life. They gained a more diverse understanding of lighting and the importance of light in Japanese culture.', 
+                ['image/specialclass/tokyo.png', 'image/specialclass/tokyo1.png'])">
+                    <img src="image/specialclass/tokyo.png" alt="Card 1">
+                    <h3>OneDay Tokyo Trip</h3>
+                </div>
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'House of Light', 
+                '', 
+                ['image/specialclass/light.png', 'image/specialclass/light1.png','image/specialclass/light2.png',])">
+                    <img src="image/specialclass/light.png" alt="Card 1">
+                    <h3>House of Light</h3>
+                </div>
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'House of Light', 
+                '', 
+                ['image/specialclass/Kanagawa.png', 'image/specialclass/Kanagawa1.png', 'image/specialclass/Kanagawa2.png', ])">
+                    <img src="image/specialclass/Kanagawa.png" alt="Card 1">
+                    <h3>Kanagawa Trip</h3>
+                </div>
+            <div class="lecture-card" onclick="updateLectureDetails(
+                'Tokyo Acrylic Workshop', 
+                'In the Tokyo Acrylic Workshop, students learned how to process acrylic. How to heat acrylic in an oven so that it can be bent into any desired shape. And how to dye acrylic. Students freely explored the craftsmanship of acrylic and its possibilities of combining with other media.', 
+                ['image/specialclass/arcylic.jpeg', 'image/specialclass/arcylic1.jpeg','image/specialclass/arcylic2.png'])">
+                    <img src="image/specialclass/arcylic.png" alt="Card 1">
+                    <h3>Tokyo Acrylic Workshop </h3>
+                </div>
+    
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'Powdercoating Workshop', 
+                'By learning powder coating, each student designed and created their own quirky character, and used this technique to paint metal objects they wanted to experiment with.', 
+                ['image/specialclass/powder.png', 'image/specialclass/powder1.png','image/specialclass/powder3.png'])">
+                    <img src="image/specialclass/powder.png" alt="Card 1">
+                    <h3>Powdercoating Workshop </h3>
+                </div>
+
+                <div class="lecture-card" onclick="updateLectureDetails(
+                'PaperMaking Workshop', 
+                'During the washi workshop, each member was able to use mulberry bark fibers and recycle fibers to create sheets of paper using real washi-making techniques. They could make any patterns and shapes they wanted.', 
+                ['image/specialclass/Washi.png', 'image/project/bg2.jpeg'])">
+                    <img src="image/specialclass/Washi.png" alt="Card 1">
+                    <h3>PaperMaking Workshop </h3>
+                </div>
+            </div>
+            
+                <!-- Add more cards as needed -->
+        </div>
     </div>
+    
+    
+    
 
     <!-- Faculty Section -->
     <div id="students&faculty" class="section hidden students-faculty-bg">
@@ -265,7 +355,7 @@
                             <img src="image/Student/Ucchii.png" alt="Student Ucchii">
                         </a>
                         <div class="profile-info">
-                            <h3>Ucchii</h3>
+                            <h3>Ucchida <br>Yuushi</h3>
                             <p>Oil Painting</p>
                         </div>
                     </div>
@@ -274,7 +364,7 @@
                             <img src="image/Student/Hibiki.jpg" alt="Student 1">
                         </a>
                         <div class="profile-info">
-                            <h3>Hibiki</h3>
+                            <h3>Hibiki <br>Washiyama</h3>
                             <p>Product Design</p>
                         </div>
                     </div>
@@ -283,7 +373,7 @@
                             <img src="image/Student/Naru.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Narumi</h3>
+                            <h3>Narumi <br>Toshitani</h3>
                             <p>Oil Painting</p>
                         </div>
                     </div>
@@ -292,7 +382,7 @@
                             <img src="image/Student/Shirori.png" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Shiori</h3>
+                            <h3>Shiori <br>Osaki</h3>
                             <p>Information Design</p>
                         </div>
                     </div>
@@ -301,7 +391,7 @@
                             <img src="image/Student/Ochan.png" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>O-Chan</h3>
+                            <h3>Yiling <br>Wang</h3>
                             <p>Animation</p>
                         </div>
                     </div>
@@ -310,7 +400,7 @@
                             <img src="image/Student/Yuuka.png" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Yuuka</h3>
+                            <h3>Yuuka <br>Tamura</h3>
                             <p>Oil Painting</p>
                         </div>
                     </div>
@@ -319,7 +409,7 @@
                             <img src="image/Student/Kein.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Kein</h3>
+                            <h3>Hitoki <br>Keino</h3>
                             <p>Environmental Design</p>
                         </div>
                     </div>
@@ -328,7 +418,7 @@
                             <img src="image/Student/Xin.JPEG" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Xinyu</h3>
+                            <h3>Xinyu <br>Zhao</h3>
                             <p>Product Design</p>
                         </div>
                     </div>
@@ -337,7 +427,7 @@
                             <img src="image/Student/Suzuka.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Suzuka</h3>
+                            <h3>Suzuka <br>Kougami</h3>
                             <p>Environmental Design</p>
                         </div>
                     </div>
@@ -346,7 +436,7 @@
                             <img src="image/Student/Anri.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Anri</h3>
+                            <h3>Anri <br>Kayashima</h3>
                             <p>Product Design</p>
                         </div>
                     </div>
@@ -360,7 +450,7 @@
                             <img src="image/Student/Galina.jpeg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Galina Zhu</h3>
+                            <h3>Galina <br>Zhu</h3>
                             <p>Interaction Design</p>
                         </div>
                     </div>
@@ -369,7 +459,7 @@
                             <img src="image/Student/Cynthia.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Cynthia Qin</h3>
+                            <h3>Cynthia <br>Qin</h3>
                             <p>Grad Product Design</p>
                         </div>
                     </div>
@@ -378,7 +468,7 @@
                             <img src="image/Student/Cheng.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Cheng Cui</h3>
+                            <h3>Cheng <br>Cui</h3>
                             <p>SXD</p>
                         </div>
                     </div>
@@ -387,7 +477,7 @@
                             <img src="image/Student/Doris.JPG" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Doris</h3>
+                            <h3>Doris <br>Yu</h3>
                             <p>Grad SXD</p>
                         </div>
                     </div>
@@ -396,7 +486,7 @@
                             <img src="image/Student/Tina.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Tina</h3>
+                            <h3>Tina <br>Tang</h3>
                             <p>Product Design</p>
                         </div>
                     </div>
@@ -405,7 +495,7 @@
                             <img src="image/Student/Ming.JPG" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Ming</h3>
+                            <h3>Ming <br>Zhang</h3>
                             <p>SXD</p>
                         </div>
                     </div>
@@ -414,7 +504,7 @@
                             <img src="image/Student/Morris.jpg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Morris</h3>
+                            <h3>Morris <br>Yu</h3>
                             <p>SXD</p>
                         </div>
                     </div>
@@ -423,7 +513,7 @@
                             <img src="image/Student/jingwen.JPG" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Jingwen</h3>
+                            <h3>Jingwen <br>Gu</h3>
                             <p>Product Design</p>
                         </div>
                     </div>
@@ -432,7 +522,7 @@
                             <img src="image/Student/Jackson.jpeg" alt="Student 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Jackson</h3>
+                            <h3>Jackson <br>Huang</h3>
                             <p>Product Design</p>
                         </div>
                     </div>
@@ -444,76 +534,74 @@
             <div id="faculty-profiles" class="profile-category hidden">
                 <div class="profile-column">
                     <h2>Tama Art University</h2>
-                    <div class="profile-card">
-                        <a href="image/Student/faculty/Wada.jpg">
-                            <img src="image/faculty1.jpg" alt="Faculty 1">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Tatsuya Wada</h3>
-                            <p>Title</p>
+                    <div class="profile-cards">
+                        <div class="profile-card">
+                            <img src="image/Student/faculty/Wada.png" alt="Faculty 1">
+                            <div class="profile-info">
+                                <h3>Prof.Tatsuya Wada</h3>
+                                <p>Dean of Educational Affairs/Faculty of Product Design Course</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-card">
-                        <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Shingo Mamiya</h3>
-                            <p>Guest Faculty</p>
+                        <div class="profile-card">
+                            <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                            <div class="profile-info">
+                                <h3>Shingo Mamiya</h3>
+                                <p>Special Guest Lecturer for 2024 Pacific Rim-Japan Stage</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-card">
-                        <a href="https://example.com/faculty2">
-                            <img src="image/Student/faculty/Daido.jpg" alt="Faculty 2">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Fumiko Daido</h3>
-                            <p>Guest Faculty</p>
+                        <div class="profile-card">
+                            <a href="https://example.com/faculty2">
+                                <img src="image/Student/faculty/Daido.png" alt="Faculty 2">
+                            </a>
+                            <div class="profile-info">
+                                <h3>Prof. Kubota Akihiro</h3>
+                                <p>Manager of International Exchange Center/Faculty of Art and Media Course</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-card">
-                        <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Ko Kashiwagi</h3>
-                            <p>workshop Faculty</p>
+                        <div class="profile-card">
+                            <a href="https://example.com/faculty2">
+                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                            </a>
+                            <div class="profile-info">
+                                <h3>Prof. Ko Kashiwagi</h3>
+                                <p>Head of Textile Design Course/Faculty of Textile Design Course</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-card">
-                        <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Keisuke Inoue</h3>
-                            <p>workshop Faculty</p>
+                        <div class="profile-card">
+                            <a href="https://example.com/faculty2">
+                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                            </a>
+                            <div class="profile-info">
+                                <h3>Prof. Em. Fumiko Daido</h3>
+                                <p>Professor Emeritus of Liberal Arts Center</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-card">
-                        <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Akihiro Kubota</h3>
-                            <p>workshop Faculty</p>
+                        <div class="profile-card">
+                            <a href="https://example.com/faculty2">
+                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                            </a>
+                            <div class="profile-info">
+                                <h3>Keisuke Inoue</h3>
+                                <p>Part-time Lecturer of Art and Media Course</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-card">
-                        <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Keito Maniwa</h3>
-                            <p>Support Staff</p>
+                        <div class="profile-card">
+                            <a href="https://example.com/faculty2">
+                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                            </a>
+                            <div class="profile-info">
+                                <h3>Shiho Chaksuvej</h3>
+                                <p>Administrator of Color Materials Trends Experiment & Exploration Laboratory</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-card">
-                        <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
-                        </a>
-                        <div class="profile-info">
-                            <h3>Shiho Chaksuvej</h3>
-                            <p>Support Staff</p>
+                        <div class="profile-card">
+                            <a href="https://example.com/faculty2">
+                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                            </a>
+                            <div class="profile-info">
+                                <h3>Keito Maniwa</h3>
+                                <p>Administrator of International Exchange Center</p>
+                            </div>
                         </div>
                     </div>
                     <!-- Additional faculty profiles for Tama Art University -->
@@ -523,7 +611,7 @@
                     <h2>ArtCenter</h2>
                     <div class="profile-card">
                         <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
+                            <img src="image/Student/Ming.JPG" alt="Faculty 2">
                         </a>
                         <div class="profile-info">
                             <h3>David Mocarski</h3>
@@ -532,20 +620,20 @@
                     </div>
                     <div class="profile-card">
                         <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
+                            <img src="image/Student/Ming.JPG" alt="Faculty 2">
                         </a>
                         <div class="profile-info">
                             <h3>Penny Herscovitch</h3>
-                            <p>Lead Faculty, Associate Professor, SXD, ACCD</p>
+                            <p>Lead Faculty, SXD, ACCD</p>
                         </div>
                     </div>
                     <div class="profile-card">
                         <a href="https://example.com/faculty2">
-                            <img src="image/faculty2.jpg" alt="Faculty 2">
+                            <img src="image/Student/Ming.JPG" alt="Faculty 2">
                         </a>
                         <div class="profile-info">
-                            <h3>Dan Gottlieb</h3>
-                            <p>Lead Faculty, Associate Professor, SXD, ACCD</p>
+                            <h3>Dan<br>Gottlieb</h3>
+                            <p>Lead Faculty, SXD, ACCD</p>
                         </div>
                     </div>
                     <!-- Additional faculty profiles for ArtCenter -->

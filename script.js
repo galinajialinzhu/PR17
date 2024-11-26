@@ -325,17 +325,26 @@ const images = [
     "image/FieldTrip/Tokyo/21_21/2121.jpeg",      // index 4
     "image/FieldTrip/Tokyo/Teamlab/teamlab.jpeg", // index 5
     "image/FieldTrip/Tokyo/Yamagiwa/yamagiwa.jpeg",      // index 6
-    "image/FieldTrip/Nagoya/PiPhotonics/Piphotonics.jpeg", // index 7
+    "image/FieldTrip/Nagoya/PiPhotonics/Piphotonics1.png", // index 7
     "image/FieldTrip/Nagoya/SuzusanShibori/SuzusanShibori.jpeg",      // index 8
     "image/FieldTrip/Nagoya/MinnaNoMori/MinnaNoMori.jpeg", // index 9
-    "", // index 10
-    "", // index 11
-    "", // index 12
-    "", // index 13
-    "", // index 14
-    "", // index 15
-    "", // index 
-    "", // index 
+    "image/FieldTrip/Nagoya/MinoTown/MinoTown1.png", // index 10
+    "image/FieldTrip/Nagoya/MinoWashiPaking/MinoWashiMaking.jpeg", // index 11
+    "image/FieldTrip/Nagoya/X'sFactory/x's.jpeg", // index 12
+    "image/FieldTrip/Nagoya/YamadaSan/Yamada1.png", // index 13
+    "image/FieldTrip/Kyoto/Yusai-tei/yu1.jpeg", // index 14
+    "image/FieldTrip/Kyoto/Ittoku-sanTemple/san1.JPG", // index 15
+    "image/FieldTrip/Kyoto/KojimaShoten/kojima1.jpeg", // index 
+    "image/FieldTrip/Kyoto/POJStudio/POJ1.png", // index 
+    "image/FieldTrip/Kyoto/ZenNight/zen1.jpeg", // index 
+    "image/FieldTrip/Kyoto/ErikoHorikiShowroom/eriko.jpeg", // index 
+    "image/FieldTrip/Kyoto/HosooTextileGallery/ho1.jpeg", // index 
+    "image/FieldTrip/Naoshima/HiroshiSugimotoGallery/Hiroshi.jpeg", // index 
+    "image/FieldTrip/Naoshima/ValleyGallery/vally.jpeg", // index 
+    "image/FieldTrip/Naoshima/ChichuMuseum/Chichu1.png", // index 
+    "image/FieldTrip/Naoshima/TeshimaArtMuseum/Teshima.jpeg", // index 
+    "image/FieldTrip/Naoshima/ArtHouse/arthouse1.png", // index 
+    "image/FieldTrip/Naoshima/BenesseHouseMuseum/Benesse.JPG", // index 
     // Add more paths as needed
 ];
 function updateDynamicImage(index) {
@@ -439,3 +448,30 @@ function showCategory(categoryId) {
     // Show the selected category
     document.getElementById(categoryId).classList.remove('hidden');
 }
+
+let backgroundImages = []; // Array to store multiple images
+let currentImageIndex = 0; // Current image index
+let backgroundInterval; // To store the interval function
+
+function updateLectureDetails(title, description, images) {
+    // Update details
+    document.getElementById("lecture-title").textContent = title;
+    document.getElementById("lecture-description").textContent = description;
+
+    // Update background images
+    backgroundImages = images; // Assign the new set of images
+    currentImageIndex = 0; // Reset to the first image
+
+    // Clear any existing interval
+    if (backgroundInterval) clearInterval(backgroundInterval);
+
+    // Start the interval to cycle through images
+    const bgElement = document.querySelector(".lecture-workshops-bg");
+    bgElement.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`; // Set the first image
+
+    backgroundInterval = setInterval(() => {
+        currentImageIndex = (currentImageIndex + 1) % backgroundImages.length; // Loop through images
+        bgElement.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
+    }, 5000); // Change image every 2 seconds
+}
+

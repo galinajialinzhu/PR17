@@ -306,10 +306,10 @@ p {
 
 .sidebar {
     position: fixed;
-    left: 30px;
+    left: 40px;
     top: 80px;
     width: 350px;
-    height: 70vh; /* Full viewport height */
+    height: 75vh; /* Full viewport height */
     background-color: transparent; /* Fully transparent background */
     padding: 20px;
     color: white;
@@ -325,33 +325,35 @@ p {
 .sidebar ul {
     list-style-type: none;
     padding: 5px;
-    font-size: 0.95em;
-    margin-bottom: 10px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    margin-top: 8px;
 }
-
 /* Grid layout for icons and links */
 
 /* Icon image styling */
 .icon {
-    width: 15px; /* Set icon width */
+    width: 20px; /* Set icon width */
     height: auto;
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 8px; /* Space between icon and text */
     vertical-align: middle; /* Align icon with text */
 }
 
 
 .city {
     
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
+    letter-spacing: 3px;
 
 }
+
 .sidebar li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .sidebar a {
-    color: white;
+    color: #f6f1f1;
     text-decoration: none;
     
 }
@@ -460,7 +462,7 @@ p {
 .profile-main-content {
     margin-left: 10%; /* 确保内容与 sidebar 对齐 */
     padding: 20px;
-    padding-top: 14%; /* 避免与顶部内容重叠 */
+    padding-top: 10%; /* 避免与顶部内容重叠 */
 }
 
 .profile-category {
@@ -479,19 +481,24 @@ h2 {
     margin-bottom: 20px;
 }
 
+.profile-cards{
+    align-items: start;
+}
+
 .profile-card {
-    display: inline-block;
+    display: inline-table;
     width: 100px;
     margin: 10px;
     text-align: center;
     color: white;
+    
 }
 
 .profile-card img {
     width: 100%;
     height: 100px;
     object-fit: cover;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -606,3 +613,126 @@ h2 {
     position: relative; /* Ensures the content is properly positioned on top */
     z-index: 0; /* Background stays behind the content */
 }
+
+
+/* Lecture & Workshops Section Styles */
+.lecture-workshops-section {
+    display: flex;
+    flex-direction: row; /* Ensures details and cards are side by side */
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+/* Background for Lecture & Workshops */
+.lecture-workshops-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    z-index: -1; /* Ensure it's behind all content */
+    transition: background-image 1.5s ease-in-out; /* Smooth transition for background image changes */
+}
+
+/* Left Details Section */
+.lecture-details {
+    flex: 1; /* Takes up half the screen */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    color: white;
+    z-index: 2; /* Above the background */
+    background: rgba(0, 0, 0, 0); /* Optional translucent overlay */
+    height: 100%; /* Full height to match the section */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.lecture-details h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+.lecture-details p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.lecture-details .lecture-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Right Cards Section */
+.lecture-cards {
+    flex: 1; /* Takes up half the screen */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top with some padding */
+    gap: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    padding: 20px;
+    height: calc(100vh - 120px); /* Adjust height to account for top and bottom margins */
+    margin: 60px 0; /* Adds space to the top and bottom */
+    overflow-y: auto; /* Allow scrolling if cards still overflow */
+    box-sizing: border-box; /* Includes padding and margin in height calculation */
+}
+
+
+
+/* Lecture Card Styles */
+.lecture-card {
+    max-width: 200px;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative; /* Positioning context for absolute elements if needed */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Title Styling */
+.lecture-card h3 {
+    margin: 10px 0; /* Add some vertical spacing */
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 2; /* Ensure the text appears above any overlapping elements */
+}
+
+/* Image Styling */
+.lecture-card img {
+    width: 100%;
+    height: 70%;
+    flex-grow: 1; /* Allow image to fill the remaining space */
+    object-fit: cover;
+    border-radius: 0 0 10px 10px; /* Rounded corners at the bottom only */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hover Effect for Image */
+.lecture-card:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Optional: Adjusting the card's hover effect */
+.lecture-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
