@@ -387,18 +387,6 @@ sidebarItems.forEach((item, index) => {
     });
 });
 
-function showDetail(index) {
-    if (locations[index]) {
-        updateDynamicImage(index); // Trigger fade-in/out effect
-        setTimeout(() => {
-            window.location.href = `detail-page.html?index=${index}`;
-        }, 500); // Delay navigation to allow fade-out to complete
-    } else {
-        console.error('Invalid location index:', index);
-    }
-}
-
-
 
 function showDetail(index) {
     const dynamicImage = document.getElementById("dynamic-image");
@@ -473,5 +461,106 @@ function updateLectureDetails(title, description, images) {
         currentImageIndex = (currentImageIndex + 1) % backgroundImages.length; // Loop through images
         bgElement.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
     }, 5000); // Change image every 2 seconds
+}
+
+
+// Project data
+const projects = [
+    {
+        name: "Origin 原点",
+        description: "This is the description for Project 1.",
+        images: [
+            "image/project/project1_img1.jpg",
+            "image/project/project1_img2.jpg",
+            "image/project/project1_img3.jpg"
+        ]
+    },
+    {
+        name: "Project 2",
+        description: "This is the description for Project 2.",
+        images: [
+            "image/project/project2_img1.jpg",
+            "image/project/project2_img2.jpg",
+            "image/project/project2_img3.jpg"
+        ]
+    },
+    {
+        name: "Project 3",
+        description: "This is the description for Project 3.",
+        images: [
+            "image/project/project3_img1.jpg",
+            "image/project/project3_img2.jpg",
+            "image/project/project3_img3.jpg"
+        ]
+    },
+    {
+        name: "Project 2",
+        description: "This is the description for Project 2.",
+        images: [
+            "image/project/project2_img1.jpg",
+            "image/project/project2_img2.jpg",
+            "image/project/project2_img3.jpg"
+        ]
+    },
+    {
+        name: "Project 2",
+        description: "This is the description for Project 2.",
+        images: [
+            "image/project/project2_img1.jpg",
+            "image/project/project2_img2.jpg",
+            "image/project/project2_img3.jpg"
+        ]
+    },
+    {
+        name: "Project 2",
+        description: "This is the description for Project 2.",
+        images: [
+            "image/project/project2_img1.jpg",
+            "image/project/project2_img2.jpg",
+            "image/project/project2_img3.jpg"
+        ]
+    },
+    {
+        name: "Project 2",
+        description: "This is the description for Project 2.",
+        images: [
+            "image/project/project2_img1.jpg",
+            "image/project/project2_img2.jpg",
+            "image/project/project2_img3.jpg"
+        ]
+    },
+    {
+        name: "Project 2",
+        description: "This is the description for Project 2.",
+        images: [
+            "image/project/project2_img1.jpg",
+            "image/project/project2_img2.jpg",
+            "image/project/project2_img3.jpg"
+        ]
+    },
+    // Add more projects as needed
+];
+
+let projectBackgroundInterval; // To store the interval for project background updates
+
+// Function to handle project selection
+function selectProject(index) {
+    const project = projects[index];
+
+    // Update name and description
+    document.getElementById("project-name").textContent = project.name;
+    document.getElementById("project-description").textContent = project.description;
+
+    // Stop any existing project background interval
+    if (projectBackgroundInterval) clearInterval(projectBackgroundInterval);
+
+    // Start looping background images
+    let imageIndex = 0;
+    const updateProjectBackground = () => {
+        document.body.style.backgroundImage = `url(${project.images[imageIndex]})`;
+        imageIndex = (imageIndex + 1) % project.images.length; // Loop through images
+    };
+    updateProjectBackground(); // Immediately update to the first image
+    projectBackgroundInterval = setInterval(updateProjectBackground, 5000); // Change every 5 seconds
 }
 

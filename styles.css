@@ -6,7 +6,6 @@
 }
 body {
     margin: 0;
-    cursor: none;
 
   }
 
@@ -557,16 +556,26 @@ h2 {
 
 /* 项目容器 */
 .projects-container {
-    position: relative;
+    position: absolute;
+    bottom: 10%; /* Align the container to the bottom of the page */
     width: 100%;
-    height: 100%;
+    display: flex; /* Use flexbox to align and distribute items */
+    justify-content: space-around; /* Space items evenly across the width */
+    align-items: flex-end; /* Align items to the bottom of the container */
+    padding: 10px; /* Add some padding at the bottom */
+    box-sizing: border-box; /* Include padding in height and width calculations */
+    height: auto; /* Automatically adjust the height to fit content */
 }
 
-/* Each project */
 .project-item {
-    position: absolute; /* Allows free positioning */
-    width: 150px;
-    height: 150px;
+    flex: 1; /* Allow items to grow and shrink with the container */
+    max-width: 15%; /* Prevent items from becoming too wide */
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 5px; /* Add some spacing between items */
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -575,9 +584,10 @@ h2 {
 .project-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px; /* Rounded corners */
+    object-fit: contain; /* Adjust image fit to maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
 }
+
 
 /* When hovering over a project */
 .project-item:hover {
@@ -736,3 +746,41 @@ h2 {
     transform: translateY(-5px); /* Lift the card slightly on hover */
 }
 
+
+/* Background image container */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Smooth transition */
+}
+
+/* Project info section */
+.project-info {
+    position: absolute; /* Position relative to the container */
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* Prevent it from being too wide */
+    width: fit-content; /* Adjust to content size */
+}
+
+
+.project-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1.2rem;
+}

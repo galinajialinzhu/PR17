@@ -9,7 +9,6 @@
 </head>
 <body>
     
-    <div class="cursor-dot"></div>
 
 
     <div id="logo-container">
@@ -24,11 +23,17 @@
         <!-- Buttons here -->
     </div>
     
+    <!-- Hero Section -->
+    <div id="hero" class="section hero-background">
+        <div class="hero-logo-container">
+            <img src="image/HealingLight.png" alt="Logo" class="hero-logo">
+        </div>
+    </div>
 
     
     <!-- Map Section -->
     
-    <div id="map" class="section">
+    <div id="map" class="section hidden">
         <div class="map-container">
 
             <img src="image/image.jpg" alt="Dynamic Map Image" id="dynamic-image" class="dynamic-image">
@@ -190,52 +195,44 @@
     </div>
 
 
-
-
-
-
-    <!-- Hero Section -->
-    <div id="hero" class="section hidden hero-background">
-        <div class="hero-logo-container">
-            <img src="image/HealingLight.png" alt="Logo" class="hero-logo">
-        </div>
-    </div>
-
     <!-- Projects Section -->
-    <div id="projects" class="section hidden">
+    <div id="projects" class="section hidden" >
         <div class="projects-background"></div>
     
         <!-- 项目容器 -->
         <div class="projects-container">
             <!-- 每个项目 -->
-            <div class="project-item" style="top: 50px; left: 100px;" onclick="navigateToDetail('project1.html')">
+            <div class="project-item" style="top: 50px; left: 100px;" onclick="selectProject(0)">
                 <img src="image/project/project1.png" alt="Project 1">
             </div>
-            <div class="project-item" style="top: 200px; left: 300px;" onclick="navigateToDetail('project2.html')">
+            <div class="project-item" style="top: 200px; left: 300px;" onclick="selectProject(1)">
                 <img src="image/project/project1.png" alt="Project 2">
             </div>
-            <div class="project-item" style="top: 400px; left: 150px;" onclick="navigateToDetail('project3.html')">
+            <div class="project-item" style="top: 400px; left: 150px;" onclick="selectProject(2)">
                 <img src="image/project/project1.png" alt="Project 3">
             </div>
-            <div class="project-item" style="top: 100px; left: 500px;" onclick="navigateToDetail('project4.html')">
+            <div class="project-item" style="top: 100px; left: 500px;" onclick="selectProject(3)">
                 <img src="image/project/project1.png" alt="Project 4">
             </div>
-            <div class="project-item" style="top: 300px; left: 600px;" onclick="navigateToDetail('project5.html')">
+            <div class="project-item" style="top: 300px; left: 600px;" onclick="selectProject(4)">
                 <img src="image/project/project1.png" alt="Project 5">
             </div>
-            <div class="project-item" style="top: 450px; left: 800px;" onclick="navigateToDetail('project6.html')">
+            <div class="project-item" style="top: 450px; left: 800px;" onclick="selectProject(5)">
                 <img src="image/project/project1.png" alt="Project 6">
             </div>
-            <div class="project-item" style="top: 250px; left: 900px;" onclick="navigateToDetail('project7.html')">
+            <div class="project-item" style="top: 250px; left: 900px;" onclick="selectProject(6)">
                 <img src="image/project/project1.png" alt="Project 7">
             </div>
-            <div class="project-item" style="top: 350px; left: 1050px;" onclick="navigateToDetail('project8.html')">
+            <div class="project-item" style="top: 350px; left: 1050px;" onclick="selectProject(7)">
                 <img src="image/project/project1.png" alt="Project 8">
             </div>
-            <div class="project-item" style="top: 500px; left: 1200px;" onclick="navigateToDetail('project9.html')">
-                <img src="image/project/project1.png" alt="Project 9">
-            </div>
         </div>
+
+        <div class="project-info">
+            <h2 id="project-name"></h2>
+            <p id="project-description"></p>
+        </div>
+
     </div>
 
     <!-- Students Section -->
@@ -329,19 +326,18 @@
         </div>
     </div>
     
-    
-    
+  
 
     <!-- Faculty Section -->
     <div id="students&faculty" class="section hidden students-faculty-bg">
 
         <div class="profile-sidebar">
             <div class="profile-sidebar-option" onclick="showCategory('student-profiles')">
-                <img src="image/student-icon.png" alt="Students Icon">
+                <img src="image/Student/Student.png" alt="Students Icon">
                 <p>Students</p>
             </div>
             <div class="profile-sidebar-option" onclick="showCategory('faculty-profiles')">
-                <img src="image/faculty-icon.png" alt="Faculty Icon">
+                <img src="image/Student/faculty.png" alt="Faculty Icon">
                 <p>Faculty</p>
             </div>
         </div>
@@ -551,7 +547,7 @@
                         </div>
                         <div class="profile-card">
                             <a href="https://example.com/faculty2">
-                                <img src="image/Student/faculty/Daido.png" alt="Faculty 2">
+                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
                             </a>
                             <div class="profile-info">
                                 <h3>Prof. Kubota Akihiro</h3>
@@ -560,7 +556,7 @@
                         </div>
                         <div class="profile-card">
                             <a href="https://example.com/faculty2">
-                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                                <img src="image/Student/faculty/ko.JPG" alt="Faculty 2">
                             </a>
                             <div class="profile-info">
                                 <h3>Prof. Ko Kashiwagi</h3>
@@ -569,7 +565,7 @@
                         </div>
                         <div class="profile-card">
                             <a href="https://example.com/faculty2">
-                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                                <img src="image/Student/faculty/Daido.png" alt="Faculty 2">
                             </a>
                             <div class="profile-info">
                                 <h3>Prof. Em. Fumiko Daido</h3>
@@ -587,7 +583,7 @@
                         </div>
                         <div class="profile-card">
                             <a href="https://example.com/faculty2">
-                                <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                                <img src="image/Student/faculty/shiho.JPG" alt="Faculty 2">
                             </a>
                             <div class="profile-info">
                                 <h3>Shiho Chaksuvej</h3>
@@ -611,7 +607,7 @@
                     <h2>ArtCenter</h2>
                     <div class="profile-card">
                         <a href="https://example.com/faculty2">
-                            <img src="image/Student/Ming.JPG" alt="Faculty 2">
+                            <img src="image/Student/faculty/David.jpg" alt="Faculty 2">
                         </a>
                         <div class="profile-info">
                             <h3>David Mocarski</h3>
@@ -647,8 +643,8 @@
 
 
     <div class="bottom-bar">
-        <button onclick="showSection('hero')">Overview</button>
-        <button onclick="showSection('map')" class="active">Field Trip</button>
+        <button onclick="showSection('hero')"class="active">Overview</button>
+        <button onclick="showSection('map')" >Field Trip</button>
         <button onclick="showSection('projects')">Projects</button>
         <button onclick="showSection('Lecture&Workshops')">Special Class</button>
         <button onclick="showSection('students&faculty')">students & faculty</button>

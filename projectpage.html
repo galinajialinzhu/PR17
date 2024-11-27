@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    
+    <div class="container">
+        <!-- Background Video -->
+        <div class="background-gif">
+            <video id="background-video" autoplay muted loop>
+                <source src="" type="video/mp4" id="video-source">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Content section -->
+        <div class="content">
+            <!-- Image and Name Section -->
+            <div class="left">
+                <img id="Team-image" alt="Place Image">
+                <div class="location-name">
+                    <h2 id="Project-name-en"></h2>
+                    <h3 id="Project-name-jp"></h3>
+                </div>
+            </div>
+
+            <!-- Description Section -->
+            <div class="right">
+                <p id="description-en"></p>
+                <p id="description-jp"></p>
+            </div>
+
+
+            <!-- Return Button to Main Page -->
+            <!-- Return Button to Main Page -->
+            <div class="return-button">
+                <img src="image/map_jpn.png" alt="Return to Map" id="return-image" onclick="goToMainPage()">
+                <p onclick="goToMainPage()">Return</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
