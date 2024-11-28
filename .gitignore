@@ -1,3 +1,6 @@
-
+# misc
+.DS_Store
 *.icloud
-*node_modules/*
+
+# dependencies
+/node_modules
