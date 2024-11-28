@@ -31,6 +31,7 @@ body, html {
 
 #logo {
     height: 60px; /* Adjust the height of the logo */
+    max-height: 10vh;
     width: auto;  /* Auto to keep the aspect ratio */
 }
 
@@ -41,7 +42,7 @@ body, html {
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
-    padding: 20px 40px; /* Increase padding for top-bottom and left-right */
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -307,8 +308,9 @@ p {
     position: fixed;
     left: 40px;
     top: 80px;
+    bottom: 80px;
     width: 350px;
-    height: 75vh; /* Full viewport height */
+    /* height: 75vh; Full viewport height deleted using bottom 80px instead of set height */
     background-color: transparent; /* Fully transparent background */
     padding: 20px;
     color: white;
@@ -334,7 +336,7 @@ p {
 .icon {
     width: 20px; /* Set icon width */
     height: auto;
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 10px; /* Space between icon and text */
     vertical-align: middle; /* Align icon with text */
 }
 
@@ -348,7 +350,7 @@ p {
 }
 
 .sidebar li {
-    margin-bottom: 10px;
+    margin-bottom: .7em;
 }
 
 .sidebar a {
@@ -393,13 +395,17 @@ p {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh; /* Full screen height */
+    height: 80%; /* Full screen height */
+    
 }
 
 .hero-logo {
-    max-width: 500px; /* Set the maximum width of the logo */
+    max-width: 70vh; /* Set the maximum width of the logo */
+    /* max-height: vh; */
+    padding-right: 40px;
+    padding-left: 20px;
     width: 100%; /* Make the logo responsive */
-    height: auto;
+    
 }
 
 
