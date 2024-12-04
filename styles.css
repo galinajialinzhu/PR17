@@ -239,7 +239,7 @@ body, html {
 }
 
 p {
-    font-size: 1vw;
+    font-size: .5rem;
     margin: 10px 0;
     text-align: left;
 }
@@ -310,12 +310,26 @@ p {
     top: 80px;
     bottom: 80px;
     width: 350px;
+    gap: calc(25px + .7em);
     /* height: 75vh; Full viewport height deleted using bottom 80px instead of set height */
     background-color: transparent; /* Fully transparent background */
     padding: 20px;
     color: white;
     overflow-y: auto; /* Keeps the content scrollable internally if needed */
     scrollbar-width: none; /* Hides the scrollbar in Firefox */
+}
+
+@media (max-width: 560px) {
+    .sidebar {
+        left:0px;
+        top: 40%;
+        bottom:65px;
+    }
+    .map-container {
+        top: 25%;  /* Centers it vertically */
+        left: 50%;  /* Centers it horizontally */
+        width: 90%;
+    }
 }
 
 .sidebar::-webkit-scrollbar {
@@ -327,7 +341,7 @@ p {
     list-style-type: none;
     padding: 5px;
     font-size: 0.9em;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     margin-top: 8px;
 }
 /* Grid layout for icons and links */
@@ -437,11 +451,9 @@ p {
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
     align-items: center;    /* Horizontally center the content */
-    padding: 20px;
-    overflow-y: auto; 
+    margin: 10px;
     z-index: 1001; 
 }
-
 /* Sidebar Options */
 .profile-sidebar-option {
     display: flex;
@@ -466,14 +478,21 @@ p {
 /* Main Content */
 .profile-main-content {
     margin-left: 10%; /* 确保内容与 sidebar 对齐 */
+    /* margin-bottom: 80px; */
     padding: 20px;
     padding-top: 10%; /* 避免与顶部内容重叠 */
 }
 
 .profile-category {
-    display: flex;
-    flex-direction: column;
     gap: 10px;
+    flex: 1; /* Takes up half the screen */
+    display: flex;
+    align-items: flex-start; /* Align to the top with some padding */
+    flex-wrap: wrap; /* Allow cards to wrap */
+    padding: 20px;
+    height: calc(100vh - 120px); /* Adjust height to account for top and bottom margins */
+    overflow-y: auto; /* Allow scrolling if cards still overflow */
+    box-sizing: border-box; /* Includes padding and margin in height calculation */
 }
 
 .profile-column {
@@ -486,22 +505,18 @@ h2 {
     margin-bottom: 20px;
 }
 
-.profile-cards{
-    align-items: start;
-}
 
 .profile-card {
     display: inline-table;
-    width: 100px;
+    width: 95px;
     margin: 10px;
     text-align: center;
     color: white;
-    
 }
 
 .profile-card img {
     width: 100%;
-    height: 100px;
+    height: 90px;
     object-fit: cover;
     border: 1px solid #fff;
     border-radius: 10px;
@@ -548,16 +563,27 @@ h2 {
 
 
   /* 背景图片 */
-.projects-background {
+
+  .project-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image/project/background.jpeg'); /* 替换为你的背景图片路径 */
     background-size: cover;
     background-position: center;
-    z-index: -1; /* 确保背景在最底层 */
+    z-index: 1;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.project-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 /* 项目容器 */
@@ -587,18 +613,25 @@ h2 {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+
 .project-item img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* Adjust image fit to maintain aspect ratio */
-    border-radius: 10px; /* Optional: Rounded corners */
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
+.project-item img:hover {
+    transform: scale(1.05);
+}
 
-/* When hovering over a project */
-.project-item:hover {
-    transform: scale(1.1); /* Enlarge the hovered object */
-    z-index: 2; /* Bring to the front */
+.project-info {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 3;
 }
 
 /* Dim all other objects except the hovered one */
@@ -618,17 +651,26 @@ h2 {
     z-index: 0; /* Background stays behind the content */
 }
 
-.hero-background{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-    url('image/Student/group.jpeg');
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+.hero-background {
+    position: relative;
     width: 100%;
-    height: 100%;
-    position: relative; /* Ensures the content is properly positioned on top */
-    z-index: 0; /* Background stays behind the content */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
 }
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensure the video is behind other content */
+    object-fit: cover; /* Video covers the container */
+    background-size: cover;
+}
+
 
 
 /* Lecture & Workshops Section Styles */
@@ -690,7 +732,6 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
-
 /* Right Cards Section */
 .lecture-cards {
     flex: 1; /* Takes up half the screen */
@@ -706,11 +747,40 @@ h2 {
     box-sizing: border-box; /* Includes padding and margin in height calculation */
 }
 
+@media (max-width: 560px) {
+    .lecture-details {
+        padding: 20px;
+    }
+    .lecture-details h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .lecture-details p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .lecture-cards {
+        padding: 10px;
+        gap: 15px;
+        margin: 90px 0;
+        height: calc(100vh - 180px);
+    }
+    .lecture-card h3 {
+        margin: 10px 0; /* Add some vertical spacing */
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+        z-index: 2; /* Ensure the text appears above any overlapping elements */
+    }
+    
+
+}
 
 
 /* Lecture Card Styles */
 .lecture-card {
     max-width: 200px;
+    height:fit-content;
     width: 100%;
     aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
     overflow: hidden;

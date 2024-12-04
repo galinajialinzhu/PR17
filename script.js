@@ -463,104 +463,76 @@ function updateLectureDetails(title, description, images) {
     }, 5000); // Change image every 2 seconds
 }
 
-
-// Project data
 const projects = [
     {
         name: "Origin 原点",
-        description: "This is the description for Project 1.",
-        images: [
-            "image/project/project1_img1.jpg",
-            "image/project/project1_img2.jpg",
-            "image/project/project1_img3.jpg"
-        ]
+        description: "Home is the origin of healing, a sanctuary where we find comfort and peace. It’s our safe haven, where we rest, share conversations, enjoy meals, and spend time with family. Going home is an invisible calling that binds every family member, drawing us together in a bond of love and belonging. 家は癒しの源であり、安らぎと安心を見つける場所です。そこは私たちが休み、会話を交わし、食事を楽しみ、家族と過ごす安全な避難所です。帰宅することは、目に見えない絆で家族全員を結びつけ、愛と帰属の中に引き寄せてくれるものです。",
+        video: "image/project/origin/origin.mp4"
     },
     {
-        name: "Project 2",
-        description: "This is the description for Project 2.",
-        images: [
-            "image/project/project2_img1.jpg",
-            "image/project/project2_img2.jpg",
-            "image/project/project2_img3.jpg"
-        ]
+        name: "Layered Moonlight 重ね月",
+        description: "Ambient illumination eases tension, fostering an immersive atmosphere to support recovery in healthcare settings. メンタルヘルスの場において、間接的な光の移ろいが緊張を和らげる。",
+        video: "image/project/Layered Moonlight/layered moonlight.mp4"
     },
     {
-        name: "Project 3",
-        description: "This is the description for Project 3.",
-        images: [
-            "image/project/project3_img1.jpg",
-            "image/project/project3_img2.jpg",
-            "image/project/project3_img3.jpg"
-        ]
+        name: "Transition: Moments between",
+        description: "Ambient illumination eases tension, fostering an immersive atmosphere to support recovery in healthcare settings",
+        video: "image/project/Transition- Moments between/transition.mp4"
     },
     {
-        name: "Project 2",
-        description: "This is the description for Project 2.",
-        images: [
-            "image/project/project2_img1.jpg",
-            "image/project/project2_img2.jpg",
-            "image/project/project2_img3.jpg"
-        ]
+        name: "Transience Journey はかなさの旅 ",
+        description: "We experience life's fleeting moments and create light to embrace our existence. In these moments of light, we catch a glimpse of our place in time. We find beauty in seeing ourselves and the world change with time. These brief encounters bring us healing journey.私たちは人生のつかの間の瞬間を経験し、私たちの存在を包み込む光を創り出します。この光の瞬間に、私たちは自分の居場所を垣間見ます。私たちは、時とともに変化する自分自身と世界を見ることに美を見出します。こうしたつかの間の出会いは、私たちに癒しの旅をもたらすでしょう。",
+        video: "image/project/Transience Journey /video.mp4"
     },
     {
-        name: "Project 2",
-        description: "This is the description for Project 2.",
-        images: [
-            "image/project/project2_img1.jpg",
-            "image/project/project2_img2.jpg",
-            "image/project/project2_img3.jpg"
-        ]
+        name: "Poetics of Light 光の詩",
+        description: "The interplay of light reveals intricate details of natural forms, captures the beauty of fleeting moments and merges traditional Japanese craft with modern aesthetics. 日本の伝統技術と現代の美的感覚を融合させ、自然物の持つ複雑さや瞬間の美しさを光と影によって表現する",
+        video: "image/project/Poetics/Poetic.mp4"
     },
     {
-        name: "Project 2",
-        description: "This is the description for Project 2.",
-        images: [
-            "image/project/project2_img1.jpg",
-            "image/project/project2_img2.jpg",
-            "image/project/project2_img3.jpg"
-        ]
+        name: "Re-Root : Teshima Library 再起：豊島図書館",
+        description: "Teshima library reminds the visitors of our natural origin. Build not only for visitors but also a place for the locals of Teshima. Through human's common roots in nature, the teshima library hopes to bring the community together and provide a healing experience under the influence of natural light. 豊島図書館は、訪れる人々に私たちの自然の起源を思い起こさせます。この図書館は、訪問者だけでなく、豊島の地元住民のための場所としても建てられました。人間が共有する自然のルーツを通じて、豊島図書館は地域を結びつけ、自然光の恩恵のもとで癒しの体験を提供することを目指しています。",
+        video: "image/project/Teshima/teshima.mp4"
     },
     {
-        name: "Project 2",
-        description: "This is the description for Project 2.",
-        images: [
-            "image/project/project2_img1.jpg",
-            "image/project/project2_img2.jpg",
-            "image/project/project2_img3.jpg"
-        ]
+        name: "Yurameki",
+        description: "Create unexpected lighting changes to catch people’s eyes and thoughts, allow them to declutter their mind to feel restoration.",
+        video: "image/project/Yurameki/Yurameki.mp4"
     },
     {
-        name: "Project 2",
-        description: "This is the description for Project 2.",
-        images: [
-            "image/project/project2_img1.jpg",
-            "image/project/project2_img2.jpg",
-            "image/project/project2_img3.jpg"
-        ]
-    },
-    // Add more projects as needed
+        name: "Flow of Refraction",
+        description: "Fluid motion illuminated: a glimpse of nature's fleeting impermanence and eternal rhythms. 流れる形は変化し続けるが、その一瞬一瞬が組み合わさる時、絶えず変化し続ける永遠が生まれる。",
+        video: "image/project/Flow/video.mp4"
+    }
 ];
 
-let projectBackgroundInterval; // To store the interval for project background updates
 
-// Function to handle project selection
 function selectProject(index) {
     const project = projects[index];
 
-    // Update name and description
+    // Update project info
     document.getElementById("project-name").textContent = project.name;
     document.getElementById("project-description").textContent = project.description;
 
-    // Stop any existing project background interval
-    if (projectBackgroundInterval) clearInterval(projectBackgroundInterval);
+    // Get video elements
+    const backgroundVideo = document.getElementById("project-background-video");
+    const videoSource = document.getElementById("project-background-source");
 
-    // Start looping background images
-    let imageIndex = 0;
-    const updateProjectBackground = () => {
-        document.body.style.backgroundImage = `url(${project.images[imageIndex]})`;
-        imageIndex = (imageIndex + 1) % project.images.length; // Loop through images
-    };
-    updateProjectBackground(); // Immediately update to the first image
-    projectBackgroundInterval = setInterval(updateProjectBackground, 5000); // Change every 5 seconds
+    if (!backgroundVideo || !videoSource) {
+        console.error('Background video elements not found');
+        return;
+    }
+
+    // Set the video source to the project's video
+    videoSource.src = project.video;
+    backgroundVideo.load(); // Reload the video element
+    backgroundVideo.play();
 }
 
+// Get the video element
+const heroVideo = document.getElementById('hero-video');
+
+// Play the video when the page loads
+window.addEventListener('load', () => {
+    heroVideo.play();
+});
