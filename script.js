@@ -496,7 +496,7 @@ const projects = [
     },
     {
         name: "Yurameki",
-        description: "Create unexpected lighting changes to catch people’s eyes and thoughts, allow them to declutter their mind to feel restoration.",
+        description: "Create unexpected lighting changes to catch people’s eyes and thoughts, allow them to declutter their mind to feel restoration. 予期しない照明の変化を作り出して、人々の目と心を引きつけ、頭の中を整理して回復を感じられるようにする。",
         video: "image/project/Yurameki/Yurameki.mp4"
     },
     {

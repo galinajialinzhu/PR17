@@ -239,9 +239,17 @@ body, html {
 }
 
 p {
-    font-size: .5rem;
+    font-size: .9rem;
     margin: 10px 0;
     text-align: left;
+}
+@media (max-width: 560px) {
+    p {
+        font-size: .5rem;
+        margin: 10px 0;
+        text-align: left;
+    }
+
 }
 
 /* Navigation arrows */
@@ -484,20 +492,20 @@ p {
 }
 
 .profile-category {
-    gap: 10px;
-    flex: 1; /* Takes up half the screen */
     display: flex;
-    align-items: flex-start; /* Align to the top with some padding */
-    flex-wrap: wrap; /* Allow cards to wrap */
-    padding: 20px;
-    height: calc(100vh - 120px); /* Adjust height to account for top and bottom margins */
-    overflow-y: auto; /* Allow scrolling if cards still overflow */
-    box-sizing: border-box; /* Includes padding and margin in height calculation */
+    flex-direction: column; /* Stack columns vertically */
+    gap: 20px; /* Add space between the sections */
+    height: auto; /* Adjust height automatically */
+    box-sizing: border-box;
 }
 
 .profile-column {
-    margin-bottom: 10px;
+    width: 100%; /* Ensure full width for each section */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
 }
+
 
 h2 {
     font-size: 24px;
@@ -624,15 +632,7 @@ h2 {
     transform: scale(1.05);
 }
 
-.project-info {
-    position: absolute;
-    bottom: 10%;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 3;
-}
+
 
 /* Dim all other objects except the hovered one */
 .projects-container .project-item:not(:hover) {
@@ -848,7 +848,16 @@ body {
     padding: 20px;
     border-radius: 10px;
     max-width: 80%; /* Prevent it from being too wide */
-    width: fit-content; /* Adjust to content size */
+}
+
+@media (max-width: 560px) {
+    .project-info {
+        top: 5%;
+        left: 0%;
+        transform: translate(0%, 0%); 
+        padding: -40px; 
+    }
+
 }
 
 
